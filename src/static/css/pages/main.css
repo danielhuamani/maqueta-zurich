@@ -1,0 +1,21 @@
+.header {
+  height: 100px;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo img {
+  display: block;
+}
+.header__menu ul {
+  display: flex;
+}
+.header__menu ul li {
+  margin: 0px 30px;
+}
+.header__menu ul li a {
+  color: c_plomo;
+}

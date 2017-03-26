@@ -1,0 +1,31 @@
+{
+  "name": "web-zurich",
+  "version": "0.0.1",
+  "description": "la web principal de nuestros portafolio",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielhuamani/maqueta-zurich.git"
+  },
+  "author": "danielhuamani",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.1.2",
+    "gulp-swig": "^0.8.0",
+    "gulp-uglify": "^1.5.1",
+    "st": "^1.1.0"
+  },
+  "dependencies": {
+    "jade": "^1.11.0",
+    "nib": "^1.1.0",
+    "plumber": "^0.4.8",
+    "supervisor": "^0.9.1"
+  }
+}
