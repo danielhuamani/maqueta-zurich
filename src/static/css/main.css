@@ -345,6 +345,194 @@ td {
 br {
   line-height: 1;
 }
+@font-face {
+  font-family: 'arialregular';
+  src: url("../fonts/arial-webfont.eot");
+  src: url("../fonts/arial-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/arial-webfont.woff2") format('woff2'), url("../fonts/arial-webfont.woff") format('woff'), url("../fonts/arial-webfont.svg#arialregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arialbold';
+  src: url("../fonts/arial_bold-webfont.eot");
+  src: url("../fonts/arial_bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/arial_bold-webfont.woff2") format('woff2'), url("../fonts/arial_bold-webfont.woff") format('woff'), url("../fonts/arial_bold-webfont.svg#arialbold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'varela_roundregular';
+  src: url("../fonts/varelaround-regular-webfont.eot");
+  src: url("../fonts/varelaround-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/varelaround-regular-webfont.woff2") format('woff2'), url("../fonts/varelaround-regular-webfont.woff") format('woff'), url("../fonts/varelaround-regular-webfont.svg#varela_roundregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-regular-webfont.woff2") format('woff2'), url("../fonts/roboto-regular-webfont.woff") format('woff'), url("../fonts/roboto-regular-webfont.svg#robotoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-light-webfont.woff2") format('woff2'), url("../fonts/roboto-light-webfont.woff") format('woff'), url("../fonts/roboto-light-webfont.svg#robotolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-bold-webfont.woff2") format('woff2'), url("../fonts/roboto-bold-webfont.woff") format('woff'), url("../fonts/roboto-bold-webfont.svg#robotobold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoblack';
+  src: url("../fonts/roboto-black-webfont.eot");
+  src: url("../fonts/roboto-black-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-black-webfont.woff2") format('woff2'), url("../fonts/roboto-black-webfont.woff") format('woff'), url("../fonts/roboto-black-webfont.svg#robotoblack") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/lato-regular-webfont.woff2") format('woff2'), url("../fonts/lato-regular-webfont.woff") format('woff'), url("../fonts/lato-regular-webfont.svg#latoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-reg-webfont.eot");
+  src: url("../fonts/lato-reg-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/lato-reg-webfont.woff2") format('woff2'), url("../fonts/lato-reg-webfont.woff") format('woff'), url("../fonts/lato-reg-webfont.svg#latoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold-webfont.eot");
+  src: url("../fonts/lato-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/lato-bold-webfont.woff2") format('woff2'), url("../fonts/lato-bold-webfont.woff") format('woff'), url("../fonts/lato-bold-webfont.svg#latobold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bol-webfont.eot");
+  src: url("../fonts/lato-bol-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/lato-bol-webfont.woff2") format('woff2'), url("../fonts/lato-bol-webfont.woff") format('woff'), url("../fonts/lato-bol-webfont.svg#latobold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.eot");
+  src: url("../fonts/lato-black-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/lato-black-webfont.woff2") format('woff2'), url("../fonts/lato-black-webfont.woff") format('woff'), url("../fonts/lato-black-webfont.svg#latoblack") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/icomoon.eot?gkahui");
+  src: url("../icons/icomoon.eot?gkahui#iefix") format('embedded-opentype'), url("../icons/icomoon.ttf?gkahui") format('truetype'), url("../icons/icomoon.woff?gkahui") format('woff'), url("../icons/icomoon.svg?gkahui#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-X:before {
+  content: "\e906";
+}
+.icon-S3 .path1:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-S3 .path2:before {
+  content: "\e908";
+  margin-left: -1.013671875em;
+  color: #211915;
+}
+.icon-S3 .path3:before {
+  content: "\e909";
+  margin-left: -1.013671875em;
+  color: #fff;
+}
+.icon-S2:before {
+  content: "\e90a";
+}
+.icon-S1:before {
+  content: "\e90b";
+}
+.icon-RELOJ:before {
+  content: "\e90c";
+}
+.icon-MINERIA:before {
+  content: "\e90d";
+}
+.icon-MANOS:before {
+  content: "\e90e";
+}
+.icon-FLECHA_BOTONES:before {
+  content: "\e90f";
+}
+.icon-DESCARGAR:before {
+  content: "\e910";
+}
+.icon-CORAZON:before {
+  content: "\e911";
+}
+.icon-BRAZO:before {
+  content: "\e912";
+}
+.icon-icon-phone:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e903";
+}
+.icon-cross:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
 a {
   margin: 0;
 }
@@ -363,10 +551,11 @@ a {
 }
 .header {
   height: 100px;
+  -webkit-box-shadow: 0px 1px 1px #f1f1f1;
+  box-shadow: 0px 1px 1px #f1f1f1;
 }
 .header__container {
   height: 100%;
-  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -402,4 +591,100 @@ a {
 }
 .header__menu ul li a {
   color: #8e9093;
+  font-family: 'latobold';
+  font-size: 16px;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.header__menu ul li a:hover {
+  border-bottom: 2px solid #2f57c9;
+}
+.footer {
+  padding-top: 80px;
+  margin-top: 20px;
+  background: #232868;
+}
+.footer__top {
+  padding-bottom: 60px;
+}
+.footer__top__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.footer__top__title {
+  font-family: 'robotoblack';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer__datos {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 200px;
+}
+.footer__datos__description p {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-family: 'robotoregular';
+  color: #fff;
+}
+.footer__datos__title_redes {
+  font-size: 14px;
+  font-family: 'robotoblack';
+  color: #fff;
+  margin-top: 15px;
+}
+.footer__datos__list_redes {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0;
+  margin-top: 10px;
+}
+.footer__datos__list_redes li {
+  margin: 0;
+  margin-right: 8px;
+}
+.footer__datos__list_redes li a {
+  color: #232868;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.footer__datos__list_redes li a:hover {
+  background: #4893ff;
+  color: #fff;
 }
