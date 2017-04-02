@@ -299,10 +299,13 @@
     &__list
         display flex
         justify-content center
+        &__item:first-child
+            border-left 1px solid transparent
         &__item
             text-align center
-            max-width 240px
-            margin 0 25px
+            width 25%
+            padding 0 25px
+            border-left 1px solid #E2E3E4
             .fecha
                 font-size 14px
                 font-family f_roboto_r
@@ -311,10 +314,17 @@
                 font-size 18px
                 font-family f_roboto_bl
                 color #58595B
+                position relative
                 &:after
                     content ""
-                    width 20px
-                    height 1px
+                    width 60px
+                    height 2px
+                    background #8e9093
+                    position absolute
+                    bottom -15px
+                    left 0
+                    right 0
+                    margin auto
                     background c_plomo
             a
                 display inline-block
@@ -327,11 +337,17 @@
                     color c_main
                     border-bottom 1px solid c_main
         &__item--blog
+            text-align left
             h3
+                text-align left
                 font-size 36px
                 font-family f_lato_bl
                 color c_main
+                &:after
+                    content ""
+                    display none
             a
+
                 display inline-block
                 margin-top 50px
                 color c_celeste

@@ -40,8 +40,17 @@ gulp.task('stylus_blocks', () => {
     .pipe(connect.reload())
 });
 
+function range (input) {
+  console.log(input)
+  var num = parseInt(input)
+  return Array.from(Array(num).keys())
+}
 
 var opt = {
+      setup: function(swig) {
+        swig.setFilter('range', range);
+
+      },
       load_json: true,
       defaults: {
         cache: false

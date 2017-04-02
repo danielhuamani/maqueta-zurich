@@ -1,0 +1,14 @@
+.nosotros_nuestra_historia {
+  margin-top: 70px;
+}
+.nosotros_nuestra_historia .container {
+  display: flex;
+}
+.nosotros_nuestra_historia .container .nuestra_historia_content {
+  max-width: 470px;
+}
+.nosotros_nuestra_historia .container .nuestra_historia_content h3 {
+  color: c_main;
+  font-size: 30px;
+  font-family: f_lato_bl;
+}
