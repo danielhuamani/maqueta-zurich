@@ -1765,6 +1765,12 @@ a {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 .nosotros_nuestra_historia .container .nuestra_historia_content {
   max-width: 470px;
@@ -1773,4 +1779,26 @@ a {
   color: #2f57c9;
   font-size: 30px;
   font-family: 'latoblack';
+}
+.nosotros_nuestra_historia .container .nuestra_historia_content .nuestra_historia_description {
+  margin-top: 40px;
+  color: #8e9093;
+  font-size: 16px;
+  font-family: 'latoregular';
+  text-align: justify;
+}
+.nosotros_nuestra_historia .container .nuestra_historia_image figure {
+  background-repeat: no-repeat;
+}
+.nosotros_nuestra_historia .container .nuestra_historia_image figure:first-child {
+  padding: 35px 40px 0px 0px;
+  background-image: url("/static/img/lineas.png");
+  background-position: top right;
+  margin-left: 140px;
+}
+.nosotros_nuestra_historia .container .nuestra_historia_image figure:last-child {
+  margin-top: -115px;
+  padding: 0px 0px 35px 40px;
+  background-image: url("/static/img/lineas.png");
+  background-position: bottom left;
 }
