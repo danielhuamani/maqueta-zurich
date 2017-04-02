@@ -1,0 +1,101 @@
+.btn {
+  padding: 10px 15px;
+  font-family: f_lato_b;
+  font-size: 15px;
+}
+.btn--main {
+  color: c_white;
+  background: c_main;
+  transition: 0.3s ease all;
+}
+.btn--main:hover {
+  background: c_main_o;
+}
+.container_products {
+  display: flex;
+}
+.container_products .product {
+  border: 1px solid c_plomo;
+  margin: 0px 25px;
+  cursor: pointer;
+}
+.container_products .product__title {
+  margin: auto;
+  margin: 20px 36px;
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid c_plomo;
+}
+.container_products .product__title h3 {
+  font-size: 20px;
+  font-family: f_lato_b;
+  color: c_plomo;
+  padding: 0px 10px 0px 10px;
+  margin: 0;
+}
+.container_products .product__img {
+  margin: 0px 36px 0px 36px;
+  padding: 50px 0px;
+  border-bottom: 1px solid c_plomo;
+}
+.container_products .product__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container_products .product__enlace {
+  text-align: center;
+  position: relative;
+}
+.container_products .product__enlace a {
+  display: inline-block;
+  width: 100%;
+  padding: 40px 0px;
+  color: c_main;
+  font-size: 16px;
+  font-family: f_lato_b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_products .product__enlace a i {
+  margin-top: -2px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.container_products .product__enlace a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.container_products .product:hover .product__img {
+  border-bottom: 1px solid transparent;
+}
+.container_products .product:hover .product__enlace a {
+  color: c_white;
+  background: c_main;
+}
+@media screen and (max-width: 1400px) {
+  .container_products {
+    display: flex;
+  }
+  .container_products .product {
+    border: 1px solid c_plomo;
+    margin: 0px 20px;
+  }
+  .container_products .product__title {
+    margin: 20px 20px;
+    padding: 10px 10px;
+  }
+  .container_products .product__img {
+    padding: 20px 0px;
+    margin: 0px 20px 0px 20px;
+  }
+  .container_products .product__enlace a {
+    padding: 15px 0px;
+  }
+}

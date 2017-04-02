@@ -1,75 +1,251 @@
 @import "../base/variables"
 
 .header
-	height 100px
-	box-shadow 0px 1px 1px #f1f1f1
-	&__container
-		height 100%
-		display flex
-		justify-content space-between
-		align-items center
-	&__logo
-		img
-			display block
-	&__menu
-		ul
-			display flex
-			li
-				margin 0px 30px
-				a
-					color c_plomo
-					font-family f_lato_b
-					font-size 16px
-					transition .3s ease all
-					border-bottom 2px solid transparent
-					padding-bottom 3px
-					&:hover
-						border-bottom 2px solid c_main
+    height 100px
+    box-shadow 0px 1px 1px #f1f1f1
+    &__icons
+
+        &__active
+            transform scale(1) !important
+            visibility visible !important
+        &__none
+            transform scale(0) !important
+            visibility hidden
+        &__close
+            color c_footer
+            font-size 26px
+            padding 5px
+            display none
+            visibility hidden
+            transform scale(0)
+            background c_white
+            border-radius 4px
+            position fixed
+            transition .4s ease all
+            top 20px
+            right 20px
+            z-index 100
+        &__open
+            transform scale(1)
+            display none
+            color c_white
+            background c_footer
+            padding 5px
+            font-size 26px
+            border-radius 4px
+            transition .4s ease all
+            position fixed
+            top 20px
+            right 20px
+            z-index 100
+
+    &__container
+        height 100%
+        display flex
+        justify-content space-between
+        align-items center
+    &__logo
+
+        img
+            width 100%
+            height auto
+            display block
+    &__menu
+        ul
+            display flex
+            li
+                margin 0px 20px
+                a
+                    color c_plomo
+                    font-family f_lato_b
+                    font-size 16px
+                    transition .3s ease all
+                    border-bottom 2px solid transparent
+                    padding-bottom 3px
+                    &:hover
+                        border-bottom 2px solid c_main
 
 .footer
-	padding-top 80px
-	margin-top 20px
-	background c_footer
-	&__top
-		padding-bottom 60px
-		&__list
-			display flex
-			justify-content space-between
-		&__title
-			font-family f_roboto_bl
-			font-size 18px
-			color c_white
-			margin-bottom 15px
-	&__datos
-		display flex
-		flex-direction column
-		width 200px
-		&__description
-			p
-				margin-bottom 2px
-				font-size 14px
-				font-family f_roboto_r
-				color c_white
-		&__title_redes
-			font-size 14px
-			font-family f_roboto_bl
-			color c_white
-			margin-top 15px
+    padding-top 80px
+    margin-top 20px
+    background c_footer
+    &__top
+        padding-bottom 60px
+        &__list
+            display flex
+            justify-content space-between
+            flex-wrap wrap
+        &__title
+            font-family f_roboto_bl
+            font-size 18px
+            color c_white
+            margin-bottom 15px
+    &__datos
+        display flex
+        flex-direction column
+        width 200px
+        &__description
+            p
+                margin-bottom 2px
+                font-size 14px
+                font-family f_roboto_r
+                color c_white
+        &__title_redes
+            font-size 14px
+            font-family f_roboto_bl
+            color c_white
+            margin-top 15px
 
-		&__list_redes
-			display flex
+        &__list_redes
+            display flex
 
-			margin 0
-			margin-top 10px
-			li
-				margin 0
-				margin-right 8px
-				a
-					color c_footer
-					background c_white
-					padding 6px
-					border-radius 50%
-					transition 0.3s ease all
-					&:hover
-						background c_celeste
-						color c_white
+            margin 0
+            margin-top 10px
+            li
+                margin 0
+                margin-right 8px
+                a
+                    color c_footer
+                    background c_white
+                    padding 6px
+                    border-radius 50%
+                    transition 0.3s ease all
+                    &:hover
+                        background c_celeste
+                        color c_white
+    &__contact
+        &__description
+            margin-top 20px
+            h4
+                font-family f_lato_b
+                font-size 14px
+                color c_white
+                margin 0
+            a
+                font-family f_lato_r
+                font-size 14px
+                color c_white
+    &__cel
+        &__list
+            li
+                margin-top 3px
+                a
+                    color c_white
+                    font-size 16px
+                    font-family f_lato_r
+    &__links
+        display flex
+        ul
+            margin 0 25px
+            display flex
+            flex-direction column
+            li
+                margin 0px 0px 15px 0px
+                a
+                    color #A1DDFF
+                    font-size 16px
+                    font-family f_roboto_bl
+                    transition .3s ease all
+                    &:hover
+                        color #4893FF
+    &__bottom
+        border-top 1px solid c_white
+        padding 10px 0px
+        &__copyright
+            display flex
+            align-items center
+        &__credit
+            display flex
+            align-items center
+        &__list
+            display flex
+            justify-content space-between
+            h4
+                font-family f_arial_r
+                color c_white
+                font-size 12px
+                margin 0
+
+
+@media screen and (max-width 960px)
+    .footer
+        padding-top 60px
+        &__datos
+            width auto
+        &__top__item
+            width 48%
+            margin 15px 0px
+        &__links
+            ul:first-child
+                margin-left 0
+            ul
+                margin 0px 15px
+    .header
+
+        &__icons
+            &__close
+                display block
+            &__open
+                display block
+        &__menu--responsive-active
+            right 0px !important
+        &__menu--responsive
+            position fixed
+            z-index 50
+            width 200px
+            padding-top 70px
+
+            height 100%
+            top 0
+            right -250px
+            background c_footer
+            transition .4s ease all
+            ul
+                flex-direction column
+                li
+                    margin 0px 0px
+                    a
+                        color c_white
+                        width 100%
+                        display inline-block
+                        padding 10px 0px 10px 20px
+
+                        margin 0
+                        &:hover
+                            background c_white
+                            border-bottom 2px solid transparent
+                            color c_main
+@media screen and (max-width 768px)
+    .footer
+        &__top__title
+            font-size 16px
+        &__links
+            ul:first-child
+                margin-left 0
+            ul
+                margin 0px 10px
+                li
+                    a
+                        font-size 14px
+        &__bottom
+            &__list
+                align-items center
+                flex-direction column
+            &__copyright
+                margin-bottom 5px
+@media screen and (max-width 768px)
+    .header
+        height 84px
+        .header__logo
+            width 225px
+    .footer
+        &__top__item
+            justify-content center
+        &__top__list
+            flex-direction column
+            align-items center
+            text-align center
+        &__top__item
+            width 100%
+        &__datos__list_redes
+            justify-content center

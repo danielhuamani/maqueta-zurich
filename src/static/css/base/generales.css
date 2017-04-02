@@ -9,3 +9,12 @@ a {
 .d-flex {
   display: flex;
 }
+.title_block {
+  text-align: center;
+}
+.title_block h2 {
+  margin: 0;
+  color: c_main;
+  font-family: f_lato_bl;
+  font-size: 36px;
+}

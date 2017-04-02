@@ -1,9 +1,14 @@
 <header class="header">
-	<div class="container header__container" data-style="display: flex;">
+	<div class="overlay"></div>
+	<div class="header__icons">
+		<a href="" class="header__icons__open header__icons__icon icon-menu"></a>
+		<a href="" class="header__icons__close header__icons__icon icon-cross"></a>
+	</div>
+	<div class="container header__container" >
 		<a href="" class="header__logo">
 			<img src="{{STATIC_URL}}img/logo.png" width="333" height="51">
 		</a>
-		<nav class="header__menu">
+		<nav class="header__menu header__menu--responsive ">
 			<ul>
 				<li>
 					<a href="">

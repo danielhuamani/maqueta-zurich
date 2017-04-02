@@ -3,18 +3,28 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/main.css">
-	<script src="{{STATIC_URL}}js/flex.js"></script>
+
 </head>
 <body class="{% block classbody %}{% endblock %}">
 	<div class="wrapper">
 		{% include "./header.html" %}
+		<div class="page">
+			{% block content %}
+
+			{% endblock content %}
+
+		</div>
 		{% include "./footer.html" %}
 	</div>
 	<script src="{{STATIC_URL}}js/jquery1.8.3.min.js"></script>
+	<script src="{{STATIC_URL}}js/main.js"></script>
 	<script>
 	jQuery(document).ready(function($) {
 
 	});
 	</script>
+	{% block js %}
+
+	{% endblock js %}
 </body>
 </html>
