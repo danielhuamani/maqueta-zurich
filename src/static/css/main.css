@@ -1977,7 +1977,7 @@ a {
 .productos .container .container_products .flecha_top {
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 80px;
   cursor: pointer;
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
@@ -1986,7 +1986,7 @@ a {
   transition: 0.3s ease all;
 }
 .productos .container .container_products .flecha_top:hover {
-  bottom: 120px;
+  bottom: 90px;
 }
 .productos .container .container_products .product__enlace a {
   font-size: 13px;
@@ -2055,7 +2055,8 @@ a {
   background: #2f57c9;
 }
 .productos__cnt_subcategoria_productos {
-  margin-top: 50px;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 .productos__cnt_subcategoria {
   width: 280px;
