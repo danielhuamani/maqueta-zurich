@@ -1,0 +1,104 @@
+.productos {
+  margin-top: 10px;
+}
+.productos .container {
+  display: flex;
+}
+.productos .container .container_products {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: calc(100% - 280px);
+  position: relative;
+}
+.productos .container .container_products .flecha_top {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.productos .container .container_products .flecha_top:hover {
+  bottom: 120px;
+}
+.productos .container .container_products .product__enlace a {
+  font-size: 13px;
+}
+.productos .container .container_products .product__title {
+  margin-top: 10px;
+}
+.productos .container .container_products .product__title h3 {
+  font-size: 16px;
+}
+.productos .container .container_products .product {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 0px 10px 20px 10px;
+}
+.productos__categorias ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productos__categorias ul li {
+  width: 23%;
+  margin-bottom: 10px;
+}
+.productos__categorias ul li a.active {
+  color: c_white;
+  background: c_main;
+}
+.productos__categorias ul li a {
+  display: inline-block;
+  background: c_plomo_c;
+  color: c_plomo;
+  font-size: 20px;
+  font-family: f_lato_b;
+  padding: 20px 20px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.3s ease all;
+}
+.productos__categorias ul li a:hover {
+  color: c_white;
+  background: c_main;
+}
+.productos__cnt_subcategoria_productos {
+  margin-top: 50px;
+}
+.productos__cnt_subcategoria {
+  width: 280px;
+  margin-right: 20px;
+}
+.productos__cnt_subcategoria h3 {
+  color: c_main;
+  font-size: 22px;
+  padding-bottom: 8px;
+  font-family: f_lato_bl;
+  position: relative;
+}
+.productos__cnt_subcategoria h3:after {
+  content: "";
+  width: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: c_main;
+}
+.productos__subcategoria ul li a {
+  display: inline-block;
+  font-size: 18PX;
+  font-family: f_lato_r;
+  color: c_plomo;
+  transition: 0.3s ease all;
+  border-bottom: 1px solid c_plomo;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  transition: 0.3s ease all;
+}
+.productos__subcategoria ul li a:hover {
+  border-bottom: 1px solid c_main;
+  color: c_main;
+}

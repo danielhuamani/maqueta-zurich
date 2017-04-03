@@ -1,0 +1,91 @@
+{% extends "../common/base.html" %}
+{% block content %}
+
+<section class="" id="container_banner" style="background-image:url('{{STATIC_URL}}img/FOTO_PRINCIPAL.png')">
+	<div class="capa"></div>
+	<div class="container">
+		<h2>
+			Productos de
+			larga durabilidiad
+		</h2>
+	</div>
+</section>
+<section class="productos">
+	<div class="productos__categorias">
+		<div class="container">
+
+			<ul>
+				<li><a href="" class="active">Minería</a></li>
+				<li><a href="">Agua potable y residual</a></li>
+				<li><a href="">Alimentos y bebidas</a></li>
+				<li><a href="">Agua potable y residual</a></li>
+				<li><a href="">Petróleo y gas</a></li>
+				<li><a href="">Minería</a></li>
+				<li><a href="">Petróleo y gas</a></li>
+				<li><a href="">Otras industrias</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="productos__cnt_subcategoria_productos">
+		<div class="container">
+			<div class="productos__cnt_subcategoria">
+				<h3>
+					Agua potable y residual
+				</h3>
+				<div class="productos__subcategoria">
+					<ul>
+						<li>
+							<a href="">Accesorios</a></li>
+						<li>
+							<a href="">Actuadores</a></li>
+						<li>
+							<a href="">Transmisores de consistencia</a></li>
+						<li>
+							<a href="">Válvulas de compuerta</a></li>
+						<li>
+							<a href="">Válvulas de control rotatorio</a></li>
+						<li>
+							<a href="">Válvulas de cuchilla</a>
+						</li>
+						<li>
+							<a href="">Válvulas de globo</a>
+						</li>
+						<li>
+							<a href="">Válvulas de tapón</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="container_products">
+					<figure class="flecha_top">
+						<img src="{{STATIC_URL}}img/flecha_top.png" alt="">
+					</figure>
+					{% for x in "28"|range %}
+
+
+					<div class="product">
+						<div class="product__title">
+							<h3>
+								P200 Series Positioners
+								Positioners Series P200
+							</h3>
+						</div>
+						<figure class="product__img">
+							<img src="{{STATIC_URL}}img/producto.png" alt="">
+						</figure>
+						<div class="product__enlace">
+							<a href="">VER PRODUCTO <i class="icon-angle-double-right"></i></a>
+						</div>
+					</div>
+					{% endfor %}
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+{% endblock content %}
+{% block js %}
+{% endblock js %}

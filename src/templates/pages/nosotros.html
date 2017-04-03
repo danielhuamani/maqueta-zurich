@@ -2,6 +2,7 @@
 {% block content %}
 
 <section class="" id="container_banner" style="background-image:url('{{STATIC_URL}}img/FOTO_PRINCIPAL.png')">
+	<div class="capa"></div>
 	<div class="container">
 		<h2>
 			Nuestros productos avalan nuestro compromiso
@@ -27,6 +28,49 @@
 			<figure>
 				<img src="{{STATIC_URL}}img/servicios_2.jpg" width="310" height="300" alt="">
 			</figure>
+		</div>
+	</div>
+</section>
+<section class="nosotros_mision_vision">
+	<div class="cnt_mision_vision cnt_mision" style="background-image: url('{{STATIC_URL}}img/mision.png')">
+		<div class="capa"></div>
+		<div class="mision_vision">
+			<h3>Misión</h3>
+			<div class="mision_vision__description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+			</div>
+		</div>
+	</div>
+	<div class="cnt_vision cnt_mision_vision" style="background-image: url('{{STATIC_URL}}img/vision.png')">
+	<div class="capa"></div>
+		<div class="mision_vision">
+			<h3>Visión</h3>
+			<div class="mision_vision__description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+			</div>
+		</div>
+	</div>
+</section>
+<section class="nosotros_nuestros_valores">
+	<div class="container">
+		<div class="title_block">
+			<h2>
+				Nuestros Valores
+			</h2>
+		</div>
+		<div class="nosotros_nuestros_valores__list">
+			{% for x in "4"|range %}
+
+			<div class="nosotros_nuestros_valores__list__item">
+				<figure>
+					<img src="{{STATIC_URL}}img/valores_1.png" class="img_res" alt="">
+				</figure>
+				<h3>RESPETO</h3>
+				<div class="description">
+					En Septiembre de 2013, Zurich Perú Valves se creó con el fin de satisfacer la demanda de válvulas .
+				</div>
+			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
