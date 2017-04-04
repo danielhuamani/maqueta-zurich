@@ -5,9 +5,9 @@
 }
 .btn--main {
   color: c_white;
-  background: c_main;
+  background-color: c_main;
   transition: 0.3s ease all;
 }
 .btn--main:hover {
-  background: c_main_o;
+  background-color: c_main_o;
 }
