@@ -1,0 +1,160 @@
+{% extends "../common/base.html" %}
+{% block content %}
+<section class="producto_detalle">
+    <div class="container">
+        <div class="slider">
+            <div id="bx-pager">
+                {% for x  in "4"|range %}
+              <a data-slide-index="{{loop.index0}}" href=""><img src="{{STATIC_URL}}img/pro_pager.png" /></a>
+              {% endfor %}
+
+            </div>
+            <div class="producto_detalle__list">
+                {% for x  in "4"|range %}
+
+                <div class="producto_detalle__item">
+
+                    <figure>
+                        <img src="{{STATIC_URL}}img/producto_detalle.png" alt="">
+                    </figure>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="producto_detalle__description">
+            <h3 class="title">P200 Series Positioners</h3>
+            <div class="producto_detalle__tabs">
+                <div class="producto_detalle__tabs__title">
+                    <h3 class="tabs__title title_first title_active_first" data-tab="#tab_first">
+                        Descripción
+                    </h3>
+                    <h3 class=" tabs__title title_last " data-tab="#tab_last">
+                        Detalles  técnicos
+                    </h3>
+                </div>
+                <div class="producto_detalle__tabs__content">
+                    <div id="tab_first" class="tab_active tab_content">
+                        <div class="content">
+                        La válvula de control rotativo (RCV) es una válvula rotativa de doble excentricidad para el control modulante de líquidos altamente abrasivos, corrosivos, gases, pulpas abrasivas, corrosivas, descarga de gases en digestores, lechada de ceniza y vapor.
+                        Combina la exactitud y el control preciso en la regulación del flujo. .
+                        El revestido de carburo tungsteno de su TRIM le proporcionan una resistencia superior a la abrasión y altas temperaturas en comparación con recubrimientos típicos. La válvula RCV es diseñada para permitir flujo en forma bi- direccional.
+                        </div>
+                    </div>
+                    <div id="tab_last" class="tab_content">
+                        <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pariatur, expedita assumenda. Veritatis sunt voluptate eos, illo, explicabo et praesentium sapiente dolores omnis iste! Repellat molestiae assumenda dignissimos earum quia.
+                        <ul>
+                            <li><p>Lorem ipsum dolor sit amet, </p></li>
+                            <li><p>Lorem ipsum dolor sit  perferendis iure!</p></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto_detalle__descarga">
+
+                <a href="">
+                    <i class="icon-DESCARGAR">
+                    </i>
+                        Descargar
+                        ficha técnica
+                </a>
+                <a href="">
+                    <i class="icon-DESCARGAR">
+                    </i>
+                        Descargar
+                        catálogo
+                </a>
+
+
+            </div>
+            <div class="producto_detalle__cotizar">
+                <a href="" class="btn btn--main">COTIZAR PRODUCTO </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="producto_detalle_relacionados">
+    <div class="container">
+        <div class="title_block">
+            <h2>
+                Productos Relacionados
+            </h2>
+        </div>
+        <div class="container_products">
+                {% for x in "6"|range %}
+                <div class="product">
+                    <div class="product__title">
+                        <h3>
+                            P200 Series Positioners
+                            Positioners Series P200
+                        </h3>
+                    </div>
+                    <figure class="product__img">
+                        <img src="{{STATIC_URL}}img/producto.png" alt="">
+
+                    </figure>
+                    <div class="product__enlace">
+                        <a href="productos_detalle.html">VER PRODUCTO <i class="icon-angle-double-right"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+    </div>
+</section>
+{% endblock content %}
+{% block js %}
+<script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
+
+<script>
+    jQuery(document).ready(function($) {
+        $(".title_last").click(function(event) {
+            /* Act on the event */
+            console.log("dsa")
+            $(".title_first").removeClass('title_active_first')
+            $(".title_last").addClass('title_active_last')
+        });
+        $(".title_first").click(function(event) {
+            /* Act on the event */
+            console.log("dsa")
+            $(".title_first").addClass('title_active_first')
+            $(".title_last").removeClass('title_active_last')
+        });
+        $(".tabs__title").click(function(event) {
+            /* Act on the event */
+            var tab = $(this).data("tab");
+            $(".tab_content").removeClass('tab_active')
+            $(tab).addClass('tab_active')
+        });
+        $('.producto_detalle__list').bxSlider({
+                adaptiveHeight: true,
+                controls: false,
+                slideWidth: 555,
+                moveSlides: 1,
+                nextText: '',
+                prevText: '',
+                minSlides: 1,
+                maxSlides: 1,
+                slideMargin: 0,
+                pagerCustom: '#bx-pager'
+
+            });
+
+        $('.container_products').bxSlider({
+                adaptiveHeight: true,
+                controls: true,
+                slideWidth: 278,
+                pager: false,
+                nextText: '',
+                prevText: '',
+                moveSlides: 1,
+                minSlides: 1,
+                maxSlides: 4,
+                slideMargin: 10,
+
+            });
+    });
+</script>
+{% endblock js %}

@@ -7,7 +7,8 @@ a
 	width 96%
 	max-width 1200px
 	margin auto
-
+.container--small
+	max-width 960px
 .d-flex
 	display flex
 
@@ -22,3 +23,8 @@ a
 	display block
 	width 100%
 	height auto
+placeholder(color,famyli)
+	::-webkit-input-placeholder { color: color; font-family: famyli; } /* WebKit */
+	:-moz-placeholder { color: color; font-family: famyli; } /* Firefox 18- */
+	::-moz-placeholder { color: color; font-family: famyli; } /* Firefox 19+ */
+	:-ms-input-placeholder { color: color; font-family: famyli; } /* IE 10+ */

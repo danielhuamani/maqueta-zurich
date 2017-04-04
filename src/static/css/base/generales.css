@@ -6,6 +6,9 @@ a {
   max-width: 1200px;
   margin: auto;
 }
+.container--small {
+  max-width: 960px;
+}
 .d-flex {
   display: flex;
 }

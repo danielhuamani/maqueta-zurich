@@ -7,6 +7,7 @@
   color: c_white;
   background-color: c_main;
   transition: 0.3s ease all;
+  border: transparent;
 }
 .btn--main:hover {
   background-color: c_main_o;
@@ -120,6 +121,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #container_banner .container h2 {
   text-align: center;
@@ -127,4 +129,15 @@
   font-size: 45px;
   font-family: f_lato_bl;
   max-width: 600px;
+}
+#container_banner .container .description {
+  max-width: 700px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: f_lato_r;
+  font-size: 16px;
+  color: c_white;
+}
+.container_banner--large {
+  height: 450px !important;
 }

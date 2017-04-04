@@ -1,0 +1,64 @@
+.contacto
+	.container
+		display flex
+	&__datos_img
+		width 40%
+		position relative
+		margin-right 50px
+		margin-top -50px
+		z-index 200
+	&__datos
+		background c_main
+		padding 60px
+
+		h3
+			color c_white
+			font-family f_lato_bl
+			font-size 24px
+			margin 0px
+		ul
+			margin-top 30px
+			li, a
+				font-size 16px
+				font-family f_roboto_r
+				color c_white
+	&__cnt_formulario
+		margin-top 50px
+		width 60%
+		h3
+			font-size 24px
+			font-family f_lato_bl
+			color c_main
+		form
+			overflow hidden
+			margin-top 30px
+			max-width 400px
+			margin-left 0
+			.btn--contacto
+				padding 10px 35px
+				text-align right
+				float right
+			.cnt-input
+				display flex
+				.input:first-child
+					margin-left 0
+				.input
+					width 50%
+					margin 7px 5px
+					placeholder(c_plomo, f_lato_r)
+					input, select, textarea
+						width 100%
+						box-sizing border-box
+						height 40px
+						padding 5px 10px
+						border 1px solid #D5D5D5
+						color c_plomo
+						border-radius 8px
+						font-family f_lato_r
+						font-size 14px
+					textarea
+						width 100%
+						height 100px
+				.input--area
+					width 100%
+
