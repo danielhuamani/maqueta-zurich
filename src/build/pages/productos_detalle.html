@@ -55,41 +55,44 @@
 			
 <section class="producto_detalle">
     <div class="cnt_cotizar">
+        <div class="cotizar">
 
-        <h3>¡Cotiza ahora!</h3>
-        <div class="cnt_description">
-            <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veritatis, repellendus dolores quas sed sit hic
+            <div class="icon-cross close"></div>
+            <h3>¡Cotiza ahora!</h3>
+            <div class="cnt_description">
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veritatis, repellendus dolores quas sed sit hic
+                </div>
+                <form action="">
+                    <div class="cnt-input">
+                        <div class="input">
+                            <input type="text" class="validate[required]" placeholder="Nombres:" name="nombres">
+                        </div>
+
+                    </div>
+                    <div class="cnt-input">
+                        <div class="input">
+                            <input type="email" class="validate[required]" placeholder="Email:" name="email">
+                        </div>
+
+                    </div>
+                    <div class="cnt-input">
+                        <div class="input">
+                            <input type="text" class="validate[required]" placeholder="Empresa:" name="empresa">
+                        </div>
+
+                    </div>
+                    <div class="cnt-input">
+                        <div class="input">
+                            <input type="text" class="validate[required]" placeholder="Telefono:" name="telefono">
+                        </div>
+
+                    </div>
+                    <button class="btn btn--main btn--cotizar">
+                        Enviar Consulta
+                    </button>
+                </form>
             </div>
-            <form action="">
-                <div class="cnt-input">
-                    <div class="input">
-                        <input type="text" class="validate[required]" placeholder="Nombres:" name="nombres">
-                    </div>
-
-                </div>
-                <div class="cnt-input">
-                    <div class="input">
-                        <input type="email" class="validate[required]" placeholder="Email:" name="email">
-                    </div>
-
-                </div>
-                <div class="cnt-input">
-                    <div class="input">
-                        <input type="text" class="validate[required]" placeholder="Empresa:" name="empresa">
-                    </div>
-
-                </div>
-                <div class="cnt-input">
-                    <div class="input">
-                        <input type="text" class="validate[required]" placeholder="Telefono:" name="telefono">
-                    </div>
-
-                </div>
-                <button class="btn btn--main">
-                    Enviar Consulta
-                </button>
-            </form>
         </div>
     </div>
     <div class="container">
@@ -463,7 +466,7 @@
         $('.container_products').bxSlider({
                 adaptiveHeight: true,
                 controls: true,
-                slideWidth: 278,
+                slideWidth: 272,
                 pager: false,
                 nextText: '',
                 prevText: '',
@@ -477,6 +480,11 @@
             /* Act on the event */
             event.preventDefault()
             $(".cnt_cotizar").addClass('cnt_cotizar--active')
+        });
+        $(".close").click(function(event) {
+            /* Act on the event */
+            event.preventDefault()
+            $(".cnt_cotizar").removeClass('cnt_cotizar--active')
         });
     });
 </script>
