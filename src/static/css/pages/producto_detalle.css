@@ -32,7 +32,7 @@
   right: -50%;
   top: 0;
   height: 100%;
-  width: calc(35% + 20px);
+  width: calc(45% + 20px);
   padding: 90px 0px 50px 80px;
   box-sizing: border-box;
   z-index: 50;
@@ -42,17 +42,14 @@
   font-family: f_lato_r;
   color: c_white;
   margin: 10px 0px;
-  max-width: 386px;
 }
 .producto_detalle .cnt_cotizar h3 {
-  max-width: 386px;
   margin: 0;
   font-size: 35px;
   font-family: f_lato_bl;
   color: #fff;
 }
 .producto_detalle .cnt_cotizar form {
-  max-width: 386px;
   margin: 0;
 }
 .producto_detalle .cnt_cotizar form .btn--cotizar:hover {
@@ -72,7 +69,7 @@
 .producto_detalle .cnt_cotizar form .cnt-input .input input {
   border-radius: 5px;
   height: 40px;
-  padding-left: 5px;
+  padding-left: 10px;
   box-sizing: border-box;
   width: 100%;
   border: none;
@@ -303,8 +300,20 @@
   .producto_detalle_relacionados .bx-wrapper {
     max-width: 808px !important;
   }
+  .producto_detalle .cotizar {
+    max-width: 320px;
+  }
 }
 @media screen and (max-width: 960px) {
+  .producto_detalle .cnt_cotizar {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .producto_detalle .cotizar {
+    max-width: 800px;
+    margin: 0px 15px;
+  }
   .producto_detalle .cnt_cotizar {
     width: 100%;
     right: -120%;
