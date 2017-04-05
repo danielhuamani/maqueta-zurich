@@ -7,6 +7,7 @@
 }
 .nosotros_nuestra_historia .container .nuestra_historia_content {
   max-width: 470px;
+  margin-right: 30px;
 }
 .nosotros_nuestra_historia .container .nuestra_historia_content h3 {
   color: c_main;
@@ -90,7 +91,8 @@
   font-family: f_roboto_r;
 }
 .nosotros_nuestros_valores {
-  margin-top: 55px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .nosotros_nuestros_valores .title_block {
   margin-bottom: 55px;
@@ -132,4 +134,51 @@
   font-size: 16px;
   font-family: f_lato_r;
   text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .nosotros_nuestra_historia {
+    margin-top: 40px;
+  }
+  .nosotros_nuestra_historia .container .nuestra_historia_content {
+    margin: 0;
+    max-width: 100%;
+  }
+  .nosotros_nuestra_historia .container .nuestra_historia_content h3 {
+    margin: 0;
+    text-align: center;
+  }
+  .nosotros_nuestra_historia .container .nuestra_historia_image {
+    display: none;
+  }
+  .nosotros_mision_vision .cnt_mision_vision .mision_vision {
+    margin: 0px 50px;
+    width: auto;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nosotros_mision_vision {
+    flex-direction: column;
+  }
+  .nosotros_mision_vision .cnt_mision_vision {
+    width: 100%;
+  }
+  .nosotros_mision_vision .cnt_mision_vision .mision_vision {
+    max-width: 90%;
+  }
+  .nosotros_nuestros_valores__list {
+    flex-wrap: wrap;
+  }
+  .nosotros_nuestros_valores__list__item {
+    margin-bottom: 30px;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nosotros_nuestros_valores__list {
+    justify-content: center;
+  }
+  .nosotros_nuestros_valores__list__item {
+    width: 80%;
+  }
 }

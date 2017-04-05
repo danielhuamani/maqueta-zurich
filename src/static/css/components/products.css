@@ -1,6 +1,9 @@
 .container_products {
   display: flex;
 }
+.container_products .product--home {
+  width: 335px;
+}
 .container_products .product {
   border: 1px solid c_plomo;
   margin: 0px 25px;
@@ -56,26 +59,36 @@
   z-index: -1;
   top: 0;
   left: 0;
-  right: 0;
+  width: 0;
   bottom: 0;
+  background: c_main;
+  transition: 0.6s ease all;
 }
 .container_products .product:hover .product__img {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid c_white;
 }
 .container_products .product:hover .product__enlace a {
   color: c_white;
-  background: c_main;
+}
+.container_products .product:hover .product__enlace a:before {
+  width: 100%;
 }
 @media screen and (max-width: 1400px) {
   .container_products {
     display: flex;
   }
+  .container_products .product--home {
+    width: 260px;
+  }
+  .container_products .product--home__title {
+    margin: 10px 10px;
+  }
   .container_products .product {
     border: 1px solid c_plomo;
-    margin: 0px 20px;
+    margin: 0px 10px;
   }
   .container_products .product__title {
-    margin: 20px 20px;
+    margin: 10px 10px;
     padding: 10px 10px;
   }
   .container_products .product__img {
@@ -84,5 +97,40 @@
   }
   .container_products .product__enlace a {
     padding: 15px 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_products .product--home {
+    width: 220px;
+    margin: 0px 6px;
+  }
+  .container_products .product--home .product__title h3 {
+    font-size: 16px;
+  }
+  .container_products .product--home .product__img {
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px;
+  }
+  .container_products .product--home .product__enlace a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_products {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_products {
+    flex-wrap: wrap;
+  }
+  .container_products .product--home {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container_products .product--home {
+    width: 80%;
   }
 }

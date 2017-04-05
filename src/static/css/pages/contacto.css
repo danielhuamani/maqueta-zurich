@@ -6,7 +6,7 @@
   position: relative;
   margin-right: 50px;
   margin-top: -50px;
-  z-index: 200;
+  z-index: 140;
 }
 .contacto__datos {
   background: c_main;
@@ -17,6 +17,7 @@
   font-family: f_lato_bl;
   font-size: 24px;
   margin: 0px;
+  text-align: center;
 }
 .contacto__datos ul {
   margin-top: 30px;
@@ -32,6 +33,7 @@
   width: 60%;
 }
 .contacto__cnt_formulario h3 {
+  text-align: center;
   font-size: 24px;
   font-family: f_lato_bl;
   color: c_main;
@@ -76,4 +78,51 @@
 }
 .contacto__cnt_formulario form .cnt-input .input--area {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container--small {
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contacto__datos {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__datos h3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contacto__datos ul {
+    margin: 0;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+  .contacto__datos_img {
+    margin-top: 0px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .contacto__datos_img figure {
+    display: none;
+  }
+  .contacto__cnt_formulario {
+    width: 100%;
+  }
+  .contacto__cnt_formulario form {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacto__cnt_formulario form .cnt-input {
+    flex-wrap: wrap;
+  }
+  .contacto__cnt_formulario form .cnt-input .input {
+    width: 100%;
+    margin: 5px 0px;
+  }
 }

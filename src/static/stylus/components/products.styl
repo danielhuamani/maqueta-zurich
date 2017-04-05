@@ -1,5 +1,7 @@
 .container_products
 	display flex
+	.product--home
+		width 335px
 	.product
 		border 1px solid c_plomo
 		margin 0px 25px
@@ -45,31 +47,42 @@
 					margin-top -2px
 					margin-left 20px
 					font-size 24px
+
+
 				&:before
 					content ""
 					position absolute
 					z-index -1
 					top 0
 					left 0
-					right 0
+					width 0
 					bottom 0
+					background c_main
+					transition .6s ease all
 
 		&:hover
 			.product__img
-				border-bottom 1px solid transparent
+				border-bottom 1px solid c_white
 			.product__enlace
 				a
 					color c_white
-					background c_main
+
+					&:before
+						width 100%
 
 @media screen and (max-width 1400px)
+
 	.container_products
 		display flex
+		.product--home
+			width 260px
+			&__title
+				margin 10px 10px
 		.product
 			border 1px solid c_plomo
-			margin 0px 20px
+			margin 0px 10px
 			&__title
-				margin 20px 20px
+				margin 10px 10px
 				padding 10px 10px
 
 			&__img
@@ -80,3 +93,32 @@
 
 				a
 					padding 15px 0px
+@media screen and (max-width 1200px)
+
+	.container_products
+		.product--home
+			width 220px
+			margin 0px 6px
+			.product__title h3
+				font-size 16px
+			.product__img
+				margin 0px 10px 0px 10px
+				padding 10px 0px
+			.product__enlace a
+				font-size 14px
+@media screen and (max-width 1200px)
+	.container_products
+		justify-content center
+@media screen and (max-width 768px)
+	.container_products
+		flex-wrap wrap
+		.product--home
+			width 45%
+			margin-bottom 15px
+
+@media screen and (max-width 480px)
+	.container_products
+
+		.product--home
+			width 80%
+

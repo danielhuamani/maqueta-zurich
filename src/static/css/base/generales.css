@@ -26,3 +26,8 @@ a {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 960px) {
+  .title_block h2 {
+    font-size: 32px;
+  }
+}

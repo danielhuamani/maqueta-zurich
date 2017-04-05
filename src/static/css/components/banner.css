@@ -39,3 +39,18 @@
 .container_banner--large {
   height: 450px !important;
 }
+@media screen and (max-width: 768px) {
+  #container_banner .container h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container_banner .container h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 48px) {
+  #container_banner .container h2 {
+    font-size: 30px;
+  }
+}

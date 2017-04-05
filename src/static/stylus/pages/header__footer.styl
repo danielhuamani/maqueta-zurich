@@ -3,6 +3,17 @@
 .header
     height 100px
     box-shadow 0px 1px 1px #f1f1f1
+    .overlay--active
+        display block !important
+    .overlay
+        position fixed
+        width 100%
+        height 100%
+        left 0
+        display none
+        top 0
+        background rgba(0,0,0,0.5)
+        z-index 150
     &__icons
 
         &__active
@@ -24,7 +35,7 @@
             transition .4s ease all
             top 20px
             right 20px
-            z-index 100
+            z-index 300
         &__open
             transform scale(1)
             display none
@@ -37,7 +48,7 @@
             position fixed
             top 20px
             right 20px
-            z-index 100
+            z-index 150
 
     &__container
         height 100%
@@ -62,8 +73,26 @@
                     transition .3s ease all
                     border-bottom 2px solid transparent
                     padding-bottom 3px
-                    &:hover
-                        border-bottom 2px solid c_main
+                    position relative
+                    transition .3s ease all
+                a:after
+                    content ""
+                    width 0%
+                    left 0
+                    transition .3s ease all
+                    bottom 0
+                    z-index 20
+                    height 2px
+                    background c_white
+                    position absolute
+
+            li:hover
+                a:after
+                    width 100%
+                    background c_main
+
+
+
 
 .footer
     padding-top 80px
@@ -191,7 +220,7 @@
             right 0px !important
         &__menu--responsive
             position fixed
-            z-index 50
+            z-index 200
             width 200px
             padding-top 70px
 
@@ -217,6 +246,9 @@
                             color c_main
 @media screen and (max-width 768px)
     .footer
+        padding-top 30px
+        &__top
+            padding-bottom 30px
         &__top__title
             font-size 16px
         &__links
@@ -233,7 +265,7 @@
                 flex-direction column
             &__copyright
                 margin-bottom 5px
-@media screen and (max-width 768px)
+@media screen and (max-width 480px)
     .header
         height 84px
         .header__logo

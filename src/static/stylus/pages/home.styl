@@ -5,8 +5,12 @@
     &__list
         &__item
             z-index 1000
-            height 360px
+            height 560px
             width 100%
+            background-position center center
+            background-size cover
+            .capa
+                background rgba(0,0,0,0.5)
             .container
                 display flex !important
                 align-items center
@@ -361,13 +365,87 @@
                 &:hover
                     color c_main
 @media screen and (max-width 1400px)
+    .home_producto_industria
+        .bx-wrapper
+            max-width 1070px !important
+        .producto_industria_slider__item
+            width 260px !important
+        .producto_industria_slider__img
+            img
+                width 100%
     .home_productos_destacados
         &__banner
             padding 50px 30px 50px 30px
-
+            margin-right 10px
     .container_slider
 
         &__list
             &__item
                 height 480px
+@media screen and (max-width 1200px)
+    .home_productos_destacados__banner
+        h3
+            font-size 34px
+        .btn--banner
+            font-size 14px
+    .home_producto_industria .bx-wrapper
+         max-width 790px !important
+    .home_productos_destacados__banner
+        padding 30px 20px 30px 20px
 
+@media screen and (max-width 960px)
+    .home_productos_destacados__banner
+        box-sizing border-box
+    .home_producto_industria .bx-wrapper
+         max-width 535px !important
+    .home_productos_destacados
+        flex-direction column
+        margin-top 20px
+
+        &__banner
+            text-align center
+            width 100%
+            margin 0
+            margin-bottom 20px
+    .container_slider
+
+        &__list
+            &__item
+                height 360px
+                .container_slider__description
+                    .container_slider__title
+                        text-shadow 1px 3px 12px #000
+@media screen and (max-width 660px)
+
+    .home_producto_industria .bx-wrapper
+         max-width 265px !important
+
+@media screen and (max-width 480px)
+    .home_productos_destacados__banner h3
+        font-size 24px
+    .home_producto_industria .producto_industria_slider__item
+        width 230px !important
+    .home_producto_industria .bx-wrapper
+        max-width 230px !important
+        .bx-controls-direction
+            .bx-next
+                width 30px
+                height 30px
+                right -35px
+            .bx-prev
+                left -35px
+                width 30px
+                height 30px
+    .home_producto_industria .producto_industria_slider__img img
+        height auto
+    .container_slider
+
+        &__list
+            &__item
+                height 360px
+                .container_slider__description
+                    text-align center
+                    .container_slider__title
+                        font-size 24px
+        .bx-pager
+            justify-content center

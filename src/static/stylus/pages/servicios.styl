@@ -1,0 +1,262 @@
+.servicios
+    margin-bottom 40px
+    &__cnt_title_tabs
+        display flex
+        justify-content space-between
+
+        .tab
+            position relative
+            cursor pointer
+            transition .3s ease all
+            text-align center
+            width 33%
+            display flex
+            justify-content center
+            align-items center
+            padding 20px
+            border-left 1px solid c_plomo
+            border-bottom 1px solid c_plomo
+            span
+                color c_plomo
+                font-size 32px
+                margin 0
+            h3
+                margin 0
+                margin-left 10px
+                font-family f_lato_b
+                font-size 18px
+                color c_main
+            .flecha
+                content ""
+                background-image url("../img/ser_hover.png")
+                width 33px
+                height 17px
+                position absolute
+                transition 0.5s ease all
+                opacity 0
+                bottom 0
+                left 0
+                right 0
+                margin auto
+                z-index 20
+            &:hover
+                background c_main
+                span
+                    color c_white
+                h3
+                    color c_white
+                .flecha
+                    opacity 1
+                    bottom -15px
+        .tab-active
+            background c_main
+            span
+                color c_white
+            h3
+                color c_white
+            .flecha
+                opacity 1
+                bottom -15px
+    &__cnt_tabs
+        margin-top 75px
+        .content_tab--active
+            display flex !important
+        .content_tab_2
+            flex-direction column
+        .content_tab
+            animation fadeEffect 0.5s
+            justify-content space-between
+            display none
+
+        .servicios_tab_img--left
+            figure:first-child
+                padding 0px 0px 35px 40px !important
+                background-position bottom left !important
+        .servicios_tab_img--2
+
+            margin-top -95px !important
+        .servicios_tab_img, .servicios_tab_img--2
+            width 45%
+            figure
+                width 470px
+            figure:last-child
+                margin-top 0
+            figure:first-child
+                padding 35px 40px 0px 0px
+                background-image url(../img/lineas_2.png)
+                background-position top right
+                margin-left 0px
+
+        .servicios_tab_content
+            max-width 550px
+            h3
+                font-family f_lato_b
+            &__list
+                margin-top 0px
+                &__item--left
+                    flex-direction row-reverse
+                &__item
+                    padding-bottom 65px
+                    margin-top 50px
+                    display flex
+                    justify-content space-between
+                    .servicios__list__item__content
+                        width 45%
+                    h4
+                        margin-bottom 30px
+                        color c_plomo
+                        font-family f_lato_b
+                        font-size 20px
+                        padding-bottom 5px
+                        position relative
+                        &:after
+                            content ""
+                            bottom 0
+                            left 0
+                            position absolute
+                            width 30px
+                            height 2px
+                            background c_plomo
+            &__description
+                color c_plomo
+                font-size 16px
+                font-family f_lato_r
+                line-height 22px
+                ul
+                    li
+                        position relative
+                        padding-left 25px
+                        margin-bottom 10px
+                        color c_plomo
+                        font-size 16px
+                        font-family f_lato_r
+                        &:after
+                            content ""
+                            z-index 10
+                            position absolute
+                            top 8px
+                            left 0
+                            width 16px
+                            height 7px
+                            background-image url("../img/flecha_li.png")
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media screen and (max-width 1200px)
+    .home_servicios__list_img
+        figure
+            max-width 380px
+            box-sizing border-box
+            img
+                width 100%
+                height auto
+                display block
+@media screen and (max-width 960px)
+    .home_servicios__list_img
+        display none
+    .home_nuestras_marcas .bx-wrapper
+        max-width 530px !important
+    .home_servicios
+        &__list
+            &__item
+                text-align left
+        .container
+            margin-top 40px
+        &__content
+            max-width 100%
+            text-align center
+            h3
+                font-size 32px
+                text-align center
+    .home_servicios__list_img
+        display none
+    .home_nuestras_marcas
+        margin-top 35px
+        .bx-wrapper
+            margin-top 40px
+            max-width 335px !important
+    .home_nuestras_noticias__list__item h3
+        font-size 16px
+    .home_nuestras_noticias__list__item--blog h3
+        font-size 32px
+    .home_nuestras_noticias__list__item
+        padding 0px 15px
+    .home_nuestras_noticias
+        margin-top 50px
+    .servicios__cnt_tabs
+        .content_tab
+            justify-content center
+        .servicios_tab_content__description ul li
+            text-align left
+        .servicios_tab_content
+            max-width 100%
+    .servicios__cnt_tabs .servicios_tab_img--2
+        display block
+        margin-top 0px !important
+    .servicios__cnt_tabs .servicios_tab_content__list__item
+        padding-bottom 0
+    .servicios__cnt_tabs .servicios_tab_img--left figure:first-child
+        padding 0
+
+
+    .servicios__cnt_tabs .servicios_tab_img figure:first-child, .servicios__cnt_tabs .servicios_tab_img--2
+        figure
+            width 100%
+
+@media screen and (max-width 768px)
+    .home_nuestras_marcas
+        padding-top 30px
+        padding-bottom 30px
+        .bx-wrapper .bx-controls-direction
+            .bx-prev
+                left -50px
+            .bx-next
+                right -50px
+    .home_nuestras_noticias__list
+        flex-wrap wrap
+        &__item:nth-child(3)
+            border-left none
+        &__item
+            width 40%
+            margin-bottom 25px
+    .servicios__cnt_title_tabs
+        flex-direction column
+        .tab
+            width 100%
+    .servicios__cnt_tabs .servicios_tab_content__list__item
+        flex-direction column
+        justify-content center
+        .servicios__list__item__content
+            width 100%
+            margin-bottom 20px
+    .servicios__cnt_tabs .servicios_tab_img--2
+        width 100%
+        text-align center
+        figure:first-child
+            padding 0 !important
+        figure
+            padding 0 !important
+            display inline-block
+@media screen and (max-width 480px)
+
+    .home_nuestras_marcas .bx-wrapper
+        margin-top 40px
+        max-width 140px !important
+        .bx-controls-direction
+            .bx-prev
+                left -70px
+            .bx-next
+                right -70px
+    .home_nuestras_noticias__list__item--blog
+        text-align center
+        h3
+            text-align center
+    .home_nuestras_noticias__list
+
+        &__item
+            width 80%
+            padding-bottom 10px
+            border-left none
+            border-bottom 1px solid #e2e3e4
+
