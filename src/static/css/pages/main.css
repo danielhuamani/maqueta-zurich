@@ -981,7 +981,7 @@
     display: none;
   }
   .nosotros_mision_vision .cnt_mision_vision .mision_vision {
-    margin: 0px 50px;
+    margin: 0px 20px;
     width: auto;
     max-width: 350px;
   }
@@ -2009,6 +2009,7 @@
   }
   .servicios__cnt_title_tabs .tab {
     width: 100%;
+    box-sizing: border-box;
   }
   .servicios__cnt_tabs .servicios_tab_content__list__item {
     flex-direction: column;
