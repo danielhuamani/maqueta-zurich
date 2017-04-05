@@ -1,11 +1,60 @@
 .producto_detalle {
-  margin-top: 65px;
+  padding-top: 65px;
+  position: relative;
+  overflow: hidden;
+}
+.producto_detalle .cnt_cotizar--active {
+  right: 0 !important;
+}
+.producto_detalle .cnt_cotizar {
+  transition: 0.6s ease all;
+  background: c_footer;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  height: 100%;
+  width: calc(40% + 20px);
+  padding: 90px 0px 50px 80px;
+  box-sizing: border-box;
+  z-index: 50;
+}
+.producto_detalle .cnt_cotizar .description {
+  font-size: 16px;
+  font-family: f_lato_r;
+  color: c_white;
+  margin: 10px 0px;
+  max-width: 386px;
+}
+.producto_detalle .cnt_cotizar h3 {
+  max-width: 386px;
+  margin: 0;
+  font-size: 35px;
+  font-family: f_lato_bl;
+  color: #fff;
+}
+.producto_detalle .cnt_cotizar form {
+  max-width: 386px;
+  margin: 0;
+}
+.producto_detalle .cnt_cotizar form .cnt-input {
+  margin-bottom: 20px;
+}
+.producto_detalle .cnt_cotizar form .cnt-input .input input {
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  background: c_footer;
+  border: 1px solid c_celeste_o;
 }
 .producto_detalle .container {
   display: flex;
 }
 .producto_detalle .container .slider {
   display: flex;
+  width: 60%;
 }
 .producto_detalle .container .slider #bx-pager {
   display: flex;
@@ -28,7 +77,9 @@
   height: 100%;
 }
 .producto_detalle__description {
+  width: 40%;
   margin-left: 20px;
+  position: relative;
 }
 .producto_detalle__description h3.title {
   font-size: 24px;
@@ -201,6 +252,11 @@
 }
 .producto_detalle_relacionados .bx-wrapper .bx-controls-direction .bx-next:hover {
   background-image: url("../img/flecha_left_hover.png");
+}
+@media screen and (max-width: 960px) {
+  .productos__categorias ul li a {
+    font-size: 16px;
+  }
 }
 @-moz-keyframes fadeEffect {
   from {

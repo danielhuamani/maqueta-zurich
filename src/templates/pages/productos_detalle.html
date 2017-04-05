@@ -1,6 +1,44 @@
 {% extends "../common/base.html" %}
 {% block content %}
 <section class="producto_detalle">
+    <div class="cnt_cotizar">
+
+        <h3>¡Cotiza ahora!</h3>
+        <div class="cnt_description">
+            <div class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veritatis, repellendus dolores quas sed sit hic
+            </div>
+            <form action="">
+                <div class="cnt-input">
+                    <div class="input">
+                        <input type="text" class="validate[required]" placeholder="Nombres:" name="nombres">
+                    </div>
+
+                </div>
+                <div class="cnt-input">
+                    <div class="input">
+                        <input type="email" class="validate[required]" placeholder="Email:" name="email">
+                    </div>
+
+                </div>
+                <div class="cnt-input">
+                    <div class="input">
+                        <input type="text" class="validate[required]" placeholder="Empresa:" name="empresa">
+                    </div>
+
+                </div>
+                <div class="cnt-input">
+                    <div class="input">
+                        <input type="text" class="validate[required]" placeholder="Telefono:" name="telefono">
+                    </div>
+
+                </div>
+                <button class="btn btn--main">
+                    Enviar Consulta
+                </button>
+            </form>
+        </div>
+    </div>
     <div class="container">
         <div class="slider">
             <div id="bx-pager">
@@ -22,6 +60,7 @@
             </div>
         </div>
         <div class="producto_detalle__description">
+
             <h3 class="title">P200 Series Positioners</h3>
             <div class="producto_detalle__tabs">
                 <div class="producto_detalle__tabs__title">
@@ -70,7 +109,7 @@
 
             </div>
             <div class="producto_detalle__cotizar">
-                <a href="" class="btn btn--main">COTIZAR PRODUCTO </a>
+                <a href="" class="btn btn--main cotizar_btn" >COTIZAR PRODUCTO </a>
             </div>
         </div>
     </div>
@@ -155,6 +194,11 @@
                 slideMargin: 10,
 
             });
+        $(".cotizar_btn").click(function(event) {
+            /* Act on the event */
+            event.preventDefault()
+            $(".cnt_cotizar").addClass('cnt_cotizar--active')
+        });
     });
 </script>
 {% endblock js %}

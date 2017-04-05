@@ -450,8 +450,8 @@ br {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-angle-double-right:before {
-  content: "\e913";
+.icon-S32:before {
+  content: "\e914";
 }
 .icon-X:before {
   content: "\e906";
@@ -509,15 +509,6 @@ br {
 .icon-arrow-right:before {
   content: "\e902";
 }
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-youtube:before {
-  content: "\ea9d";
-}
-.icon-linkedin2:before {
-  content: "\eaca";
-}
 .icon-envelope:before {
   content: "\e900";
 }
@@ -544,6 +535,9 @@ br {
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-angle-double-right:before {
+  content: "\e913";
 }
 a {
   margin: 0;
@@ -2418,7 +2412,83 @@ a {
   color: #2f57c9;
 }
 .producto_detalle {
-  margin-top: 65px;
+  padding-top: 65px;
+  position: relative;
+  overflow: hidden;
+}
+.producto_detalle .cnt_cotizar--active {
+  right: 0 !important;
+}
+.producto_detalle .cnt_cotizar {
+  -webkit-transition: 0.6s ease all;
+  -moz-transition: 0.6s ease all;
+  -o-transition: 0.6s ease all;
+  -ms-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+  background: #232868;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  height: 100%;
+  width: calc(40% + 20px);
+  padding: 90px 0px 50px 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 50;
+}
+.producto_detalle .cnt_cotizar .description {
+  font-size: 16px;
+  font-family: 'latoregular';
+  color: #fff;
+  margin: 10px 0px;
+  max-width: 386px;
+}
+.producto_detalle .cnt_cotizar h3 {
+  max-width: 386px;
+  margin: 0;
+  font-size: 35px;
+  font-family: 'latoblack';
+  color: #fff;
+}
+.producto_detalle .cnt_cotizar form {
+  max-width: 386px;
+  margin: 0;
+}
+.producto_detalle .cnt_cotizar form .cnt-input {
+  margin-bottom: 20px;
+/* WebKit */
+/* Firefox 18- */
+/* Firefox 19+ */
+/* IE 10+ */
+}
+.producto_detalle .cnt_cotizar form .cnt-input ::-webkit-input-placeholder {
+  color: #fff;
+  font-family: 'latoregular';
+}
+.producto_detalle .cnt_cotizar form .cnt-input :-moz-placeholder {
+  color: #fff;
+  font-family: 'latoregular';
+}
+.producto_detalle .cnt_cotizar form .cnt-input ::-moz-placeholder {
+  color: #fff;
+  font-family: 'latoregular';
+}
+.producto_detalle .cnt_cotizar form .cnt-input :-ms-input-placeholder {
+  color: #fff;
+  font-family: 'latoregular';
+}
+.producto_detalle .cnt_cotizar form .cnt-input .input input {
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  background: #232868;
+  border: 1px solid #a1ddff;
 }
 .producto_detalle .container {
   display: -webkit-box;
@@ -2435,6 +2505,7 @@ a {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  width: 60%;
 }
 .producto_detalle .container .slider #bx-pager {
   display: -webkit-box;
@@ -2467,7 +2538,9 @@ a {
   height: 100%;
 }
 .producto_detalle__description {
+  width: 40%;
   margin-left: 20px;
+  position: relative;
 }
 .producto_detalle__description h3.title {
   font-size: 24px;
@@ -2683,6 +2756,11 @@ a {
 }
 .producto_detalle_relacionados .bx-wrapper .bx-controls-direction .bx-next:hover {
   background-image: url("../img/flecha_left_hover.png");
+}
+@media screen and (max-width: 960px) {
+  .productos__categorias ul li a {
+    font-size: 16px;
+  }
 }
 @-moz-keyframes fadeEffect {
   from {
