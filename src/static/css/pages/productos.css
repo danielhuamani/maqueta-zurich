@@ -87,6 +87,10 @@
   height: 2px;
   background-color: c_main;
 }
+.productos__subcategoria ul li a.active {
+  border-bottom: 1px solid c_main;
+  color: c_main;
+}
 .productos__subcategoria ul li a {
   display: inline-block;
   font-size: 18PX;

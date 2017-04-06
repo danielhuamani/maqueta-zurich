@@ -215,7 +215,10 @@
             h3
                 font-size 16px
         .product__enlace
+
             a
+                position relative
+                z-index 2
                 font-size 13px
     .bx-wrapper
         margin auto
@@ -349,6 +352,8 @@
     .producto_detalle_relacionados .bx-wrapper
         max-width 260px !important
 @media screen and (max-width 480px)
+    .producto_detalle__descarga a
+        font-size 16px
     .producto_detalle__tabs__title h3
         padding 5px 5px
     .productos__categorias ul

@@ -1,4 +1,7 @@
 {% extends "../common/base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{STATIC_URL}}js/validationform/validationEngine.jquery.css">
+{% endblock css %}
 {% block content %}
 <section class="producto_detalle">
     <div class="cnt_cotizar">
@@ -10,7 +13,7 @@
                 <div class="description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veritatis, repellendus dolores quas sed sit hic
                 </div>
-                <form action="">
+                <form action="" id="form_cotizar">
                     <div class="cnt-input">
                         <div class="input">
                             <input type="text" class="validate[required]" placeholder="Nombres:" name="nombres">
@@ -149,6 +152,8 @@
 {% endblock content %}
 {% block js %}
 <script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
+<script src="{{STATIC_URL}}js/validationform/jquery.validationEngine-es.js"></script>
+<script src="{{STATIC_URL}}js/validationform/jquery.validationEngine.js"></script>
 
 <script>
     jQuery(document).ready(function($) {
@@ -206,6 +211,25 @@
             /* Act on the event */
             event.preventDefault()
             $(".cnt_cotizar").removeClass('cnt_cotizar--active')
+        });
+        $("form").validationEngine('attach', {
+            promptPosition: "topLeft",
+            autoHidePrompt: true,
+            autoHideDelay: 400000,
+            binded: false,
+            scroll: false
+        });
+        $("#form_cotizar").click(function(e) {
+            e.preventDefault();
+            var valid = $('#form_cotizar').validationEngine('validate');
+            console.log(valid)
+            if (!valid) {
+
+            }else{
+                $('#form_cotizar').fadeOut('slow');
+
+            }
+
         });
     });
 </script>
