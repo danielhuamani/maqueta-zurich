@@ -565,7 +565,7 @@ a {
   margin: 0;
   color: #2f57c9;
   font-family: 'latoblack';
-  font-size: 36px;
+  font-size: 30px;
 }
 .img_res {
   display: block;
@@ -591,6 +591,7 @@ a {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 .btn--main:hover {
   background-color: #3a75d6;
@@ -627,7 +628,7 @@ a {
 }
 .container_products .product__img {
   margin: 0px 36px 0px 36px;
-  padding: 50px 0px;
+  padding: 30px 0px;
   border-bottom: 1px solid #8e9093;
 }
 .container_products .product__img img {
@@ -642,7 +643,7 @@ a {
 .container_products .product__enlace a {
   display: inline-block;
   width: 100%;
-  padding: 40px 0px;
+  padding: 30px 0px;
   color: #2f57c9;
   font-size: 16px;
   font-family: 'latobold';
@@ -718,11 +719,11 @@ a {
     padding: 10px 10px;
   }
   .container_products .product__img {
-    padding: 20px 0px;
+    padding: 20px 0px 40px 0px;
     margin: 0px 20px 0px 20px;
   }
   .container_products .product__enlace a {
-    padding: 15px 0px;
+    padding: 20px 0px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1029,7 +1030,7 @@ a {
 }
 .footer__top__title {
   font-family: 'robotoblack';
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -1139,7 +1140,7 @@ a {
 }
 .footer__links ul li a {
   color: #a1ddff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'robotoblack';
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
@@ -1148,7 +1149,7 @@ a {
   transition: 0.3s ease all;
 }
 .footer__links ul li a:hover {
-  color: #4893ff;
+  color: #fff;
 }
 .footer__bottom {
   border-top: 1px solid #fff;
@@ -1565,17 +1566,17 @@ a {
 }
 .home_producto_industria .producto_industria_slider__item .capa--hover .title_industria__border {
   content: "";
-  width: 50px;
+  width: 30px;
   height: 2px;
   background: #fff;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .home_producto_industria .producto_industria_slider__item h4.title_industria {
   font-family: 'latobold';
   font-size: 19px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -1665,12 +1666,6 @@ a {
   display: box;
   display: flex;
   margin-top: 80px;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
 }
 .home_productos_destacados__banner {
   width: 380px;
@@ -1716,6 +1711,9 @@ a {
 }
 .home_servicios__list {
   margin-top: 25px;
+}
+.home_servicios__list__item:last-child {
+  border-bottom: none;
 }
 .home_servicios__list__item {
   margin-top: 35px;
@@ -1913,6 +1911,7 @@ a {
   margin-left: 10px;
 }
 .home_nuestras_noticias__list__item--blog a:hover {
+  border-bottom: 1px solid transparent;
   color: #2f57c9;
 }
 @media screen and (max-width: 1400px) {
@@ -2002,9 +2001,6 @@ a {
     left: -35px;
     width: 30px;
     height: 30px;
-  }
-  .home_producto_industria .producto_industria_slider__img img {
-    height: auto;
   }
   .container_slider__list__item {
     height: 360px;

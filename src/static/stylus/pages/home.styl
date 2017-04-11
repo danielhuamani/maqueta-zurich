@@ -116,18 +116,18 @@
                     z-index 1000
                 .title_industria__border
                     content ""
-                    width 50px
+                    width 30px
                     height 2px
 
                     background #fff
 
                     margin 0
-                    margin-top 5px
+                    margin-top 8px
             h4.title_industria
                 font-family f_lato_b
                 font-size 19px
                 position absolute
-                bottom 10px
+                bottom 20px
                 left 0
                 right 0
                 margin auto
@@ -140,8 +140,6 @@
                 h4.title_industria
                     opacity 0
                 .capa--hover
-
-
                     transform scale(1)
                     background rgba(47, 87, 201, 0.6)
                     z-index 20
@@ -183,7 +181,7 @@
 .home_productos_destacados
     display flex
     margin-top 80px
-    justify-content center
+
     &__banner
         width 380px
         background c_footer
@@ -213,6 +211,8 @@
             font-size 36px
     &__list
         margin-top 25px
+        &__item:last-child
+            border-bottom none
         &__item
             margin-top 35px
             border-bottom 1px solid c_plomo
@@ -363,6 +363,7 @@
 
                     margin-left 10px
                 &:hover
+                    border-bottom 1px solid transparent
                     color c_main
 @media screen and (max-width 1400px)
     .home_producto_industria
@@ -436,8 +437,7 @@
                 left -35px
                 width 30px
                 height 30px
-    .home_producto_industria .producto_industria_slider__img img
-        height auto
+
     .container_slider
 
         &__list

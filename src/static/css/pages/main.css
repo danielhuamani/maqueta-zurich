@@ -109,7 +109,7 @@
 }
 .footer__top__title {
   font-family: 'robotoblack';
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -185,12 +185,12 @@
 }
 .footer__links ul li a {
   color: #a1ddff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'robotoblack';
   transition: 0.3s ease all;
 }
 .footer__links ul li a:hover {
-  color: #4893ff;
+  color: #fff;
 }
 .footer__bottom {
   border-top: 1px solid #fff;
@@ -460,17 +460,17 @@
 }
 .home_producto_industria .producto_industria_slider__item .capa--hover .title_industria__border {
   content: "";
-  width: 50px;
+  width: 30px;
   height: 2px;
   background: #fff;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .home_producto_industria .producto_industria_slider__item h4.title_industria {
   font-family: 'latobold';
   font-size: 19px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -529,7 +529,6 @@
 .home_productos_destacados {
   display: flex;
   margin-top: 80px;
-  justify-content: center;
 }
 .home_productos_destacados__banner {
   width: 380px;
@@ -565,6 +564,9 @@
 }
 .home_servicios__list {
   margin-top: 25px;
+}
+.home_servicios__list__item:last-child {
+  border-bottom: none;
 }
 .home_servicios__list__item {
   margin-top: 35px;
@@ -736,6 +738,7 @@
   margin-left: 10px;
 }
 .home_nuestras_noticias__list__item--blog a:hover {
+  border-bottom: 1px solid transparent;
   color: #2f57c9;
 }
 @media screen and (max-width: 1400px) {
@@ -818,9 +821,6 @@
     left: -35px;
     width: 30px;
     height: 30px;
-  }
-  .home_producto_industria .producto_industria_slider__img img {
-    height: auto;
   }
   .container_slider__list__item {
     height: 360px;

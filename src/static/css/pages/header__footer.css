@@ -109,7 +109,7 @@
 }
 .footer__top__title {
   font-family: 'robotoblack';
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -185,12 +185,12 @@
 }
 .footer__links ul li a {
   color: #a1ddff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'robotoblack';
   transition: 0.3s ease all;
 }
 .footer__links ul li a:hover {
-  color: #4893ff;
+  color: #fff;
 }
 .footer__bottom {
   border-top: 1px solid #fff;
