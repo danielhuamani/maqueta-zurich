@@ -592,8 +592,10 @@ a {
   transition: 0.3s ease all;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-left: 0;
 }
 .btn--main:hover {
+  margin-left: 10px;
   background-color: #3a75d6;
 }
 .container_products {
