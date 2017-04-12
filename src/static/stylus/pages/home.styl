@@ -181,7 +181,30 @@
 .home_productos_destacados
     display flex
     margin-top 80px
-
+    max-width 2600px
+    position relative
+    &:before
+        content ""
+        position absolute
+        left 0
+        bottom 0px
+        height 1px
+        width 100%
+        top 7px
+        background c_celeste
+        margin auto
+        z-index -1
+    &:after
+        content ""
+        position absolute
+        left 0
+        bottom 7px
+        height 1px
+        width 100%
+        top 0
+        background c_celeste
+        margin auto
+        z-index -1
     &__banner
         width 380px
         background c_footer
@@ -196,7 +219,7 @@
             font-size 16px
         .btn--banner
             display inline-block
-            margin-top 20px
+            margin-top 30px
 
 .home_servicios
     .container
@@ -215,11 +238,21 @@
             border-bottom none
         &__item
             margin-top 35px
-            border-bottom 1px solid c_plomo
+            border-bottom 1px solid #E2E3E4
             h4
                 font-size 21px
                 font-family f_lato_bl
                 color c_plomo
+                position relative
+                padding-bottom 15px
+                &:after
+                    content ""
+                    position absolute
+                    left 0
+                    bottom 0px
+                    width 25px
+                    height 2px
+                    background #6D6E70
         &__description
             font-family f_lato_r
             font-size 16px

@@ -529,6 +529,32 @@
 .home_productos_destacados {
   display: flex;
   margin-top: 80px;
+  max-width: 2600px;
+  position: relative;
+}
+.home_productos_destacados:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 1px;
+  width: 100%;
+  top: 7px;
+  background: #4893ff;
+  margin: auto;
+  z-index: -1;
+}
+.home_productos_destacados:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  background: #4893ff;
+  margin: auto;
+  z-index: -1;
 }
 .home_productos_destacados__banner {
   width: 380px;
@@ -547,7 +573,7 @@
 }
 .home_productos_destacados__banner .btn--banner {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .home_servicios .container {
   display: flex;
@@ -570,12 +596,23 @@
 }
 .home_servicios__list__item {
   margin-top: 35px;
-  border-bottom: 1px solid #8e9093;
+  border-bottom: 1px solid #e2e3e4;
 }
 .home_servicios__list__item h4 {
   font-size: 21px;
   font-family: 'latoblack';
   color: #8e9093;
+  position: relative;
+  padding-bottom: 15px;
+}
+.home_servicios__list__item h4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 25px;
+  height: 2px;
+  background: #6d6e70;
 }
 .home_servicios__list__description {
   font-family: 'latoregular';
@@ -1072,7 +1109,7 @@
   display: inline-block;
   background: #ededee;
   color: #8e9093;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'latobold';
   padding: 20px 20px;
   width: 100%;
@@ -1094,7 +1131,7 @@
 }
 .productos__cnt_subcategoria h3 {
   color: #2f57c9;
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 8px;
   font-family: 'latoblack';
   position: relative;
@@ -1114,7 +1151,7 @@
 }
 .productos__subcategoria ul li a {
   display: inline-block;
-  font-size: 18PX;
+  font-size: 16px;
   font-family: 'latoregular';
   color: #8e9093;
   transition: 0.3s ease all;
@@ -1625,7 +1662,7 @@
 .contacto__datos_img {
   width: 40%;
   position: relative;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-top: -50px;
   z-index: 140;
 }
@@ -1638,7 +1675,7 @@
   font-family: 'latoblack';
   font-size: 24px;
   margin: 0px;
-  text-align: center;
+  text-align: left;
 }
 .contacto__datos ul {
   margin-top: 30px;
@@ -1658,11 +1695,12 @@
   font-size: 24px;
   font-family: 'latoblack';
   color: #2f57c9;
+  text-align: left;
 }
 .contacto__cnt_formulario form {
   overflow: hidden;
   margin-top: 30px;
-  max-width: 400px;
+  max-width: 520px;
   margin-left: 0;
 }
 .contacto__cnt_formulario form .btn--contacto {
@@ -1707,7 +1745,7 @@
     margin-top: 20px;
   }
   .contacto__datos {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1717,6 +1755,7 @@
   .contacto__datos h3 {
     width: 100%;
     margin-bottom: 20px;
+    text-align: center;
   }
   .contacto__datos ul {
     margin: 0;
@@ -1737,14 +1776,15 @@
   .contacto__cnt_formulario form {
     max-width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
   .contacto__cnt_formulario form .cnt-input {
     flex-wrap: wrap;
   }
   .contacto__cnt_formulario form .cnt-input .input {
     width: 100%;
     margin: 5px 0px;
+  }
+  .contacto__cnt_formulario h3 {
+    text-align: center;
   }
 }
 .servicios {
@@ -1763,7 +1803,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 32px;
   border-left: 1px solid #8e9093;
   border-bottom: 1px solid #8e9093;
 }
@@ -1864,6 +1904,7 @@
 }
 .servicios__cnt_tabs .servicios_tab_content h3 {
   font-family: 'latobold';
+  font-size: 30px;
 }
 .servicios__cnt_tabs .servicios_tab_content__list {
   margin-top: 0px;
@@ -1884,8 +1925,8 @@
   margin-bottom: 30px;
   color: #8e9093;
   font-family: 'latobold';
-  font-size: 20px;
-  padding-bottom: 5px;
+  font-size: 18px;
+  padding-bottom: 15px;
   position: relative;
 }
 .servicios__cnt_tabs .servicios_tab_content__list__item h4:after {
@@ -1983,6 +2024,9 @@
   }
   .servicios__cnt_tabs .servicios_tab_content {
     max-width: 100%;
+  }
+  .servicios__cnt_title_tabs .tab {
+    padding: 24px;
   }
   .servicios__cnt_tabs .servicios_tab_img--2 {
     display: block;

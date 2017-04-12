@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 32px;
   border-left: 1px solid c_plomo;
   border-bottom: 1px solid c_plomo;
 }
@@ -115,6 +115,7 @@
 }
 .servicios__cnt_tabs .servicios_tab_content h3 {
   font-family: f_lato_b;
+  font-size: 30px;
 }
 .servicios__cnt_tabs .servicios_tab_content__list {
   margin-top: 0px;
@@ -135,8 +136,8 @@
   margin-bottom: 30px;
   color: c_plomo;
   font-family: f_lato_b;
-  font-size: 20px;
-  padding-bottom: 5px;
+  font-size: 18px;
+  padding-bottom: 15px;
   position: relative;
 }
 .servicios__cnt_tabs .servicios_tab_content__list__item h4:after {
@@ -234,6 +235,9 @@
   }
   .servicios__cnt_tabs .servicios_tab_content {
     max-width: 100%;
+  }
+  .servicios__cnt_title_tabs .tab {
+    padding: 24px;
   }
   .servicios__cnt_tabs .servicios_tab_img--2 {
     display: block;

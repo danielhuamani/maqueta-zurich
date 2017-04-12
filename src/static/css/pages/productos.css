@@ -51,7 +51,7 @@
   display: inline-block;
   background: c_plomo_c;
   color: c_plomo;
-  font-size: 20px;
+  font-size: 18px;
   font-family: f_lato_b;
   padding: 20px 20px;
   width: 100%;
@@ -73,7 +73,7 @@
 }
 .productos__cnt_subcategoria h3 {
   color: c_main;
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 8px;
   font-family: f_lato_bl;
   position: relative;
@@ -93,7 +93,7 @@
 }
 .productos__subcategoria ul li a {
   display: inline-block;
-  font-size: 18PX;
+  font-size: 16px;
   font-family: f_lato_r;
   color: c_plomo;
   transition: 0.3s ease all;

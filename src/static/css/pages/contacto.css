@@ -4,7 +4,7 @@
 .contacto__datos_img {
   width: 40%;
   position: relative;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-top: -50px;
   z-index: 140;
 }
@@ -17,7 +17,7 @@
   font-family: f_lato_bl;
   font-size: 24px;
   margin: 0px;
-  text-align: center;
+  text-align: left;
 }
 .contacto__datos ul {
   margin-top: 30px;
@@ -37,11 +37,12 @@
   font-size: 24px;
   font-family: f_lato_bl;
   color: c_main;
+  text-align: left;
 }
 .contacto__cnt_formulario form {
   overflow: hidden;
   margin-top: 30px;
-  max-width: 400px;
+  max-width: 520px;
   margin-left: 0;
 }
 .contacto__cnt_formulario form .btn--contacto {
@@ -86,7 +87,7 @@
     margin-top: 20px;
   }
   .contacto__datos {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -96,6 +97,7 @@
   .contacto__datos h3 {
     width: 100%;
     margin-bottom: 20px;
+    text-align: center;
   }
   .contacto__datos ul {
     margin: 0;
@@ -116,13 +118,14 @@
   .contacto__cnt_formulario form {
     max-width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
   .contacto__cnt_formulario form .cnt-input {
     flex-wrap: wrap;
   }
   .contacto__cnt_formulario form .cnt-input .input {
     width: 100%;
     margin: 5px 0px;
+  }
+  .contacto__cnt_formulario h3 {
+    text-align: center;
   }
 }
