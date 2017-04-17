@@ -214,7 +214,7 @@
   height: 1px;
   width: 100%;
   top: 7px;
-  background: c_celeste;
+  background: #a1ddff;
   margin: auto;
   z-index: -1;
 }
@@ -226,7 +226,7 @@
   height: 1px;
   width: 100%;
   top: 0;
-  background: c_celeste;
+  background: #a1ddff;
   margin: auto;
   z-index: -1;
 }
