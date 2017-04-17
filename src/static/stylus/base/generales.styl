@@ -1,34 +1,45 @@
 a
-	margin 0
+    margin 0
 
 
 
 .container
-	width 96%
-	max-width 1200px
-	margin auto
+    width 96%
+    max-width 1200px
+    margin auto
+.container--text
+    width 94% !important
 .container--small
-	max-width 960px
+    max-width 960px
 .d-flex
-	display flex
+    display flex
 
 .title_block
-	text-align center
-	h2
-		margin 0
-		color c_main
-		font-family f_lato_bl
-		font-size 30px
+    text-align center
+    h2
+        margin 0
+        color c_main
+        font-family f_lato_bl
+        font-size 30px
 .img_res
-	display block
-	width 100%
-	height auto
+    display block
+    width 100%
+    height auto
 placeholder(color,famyli)
-	::-webkit-input-placeholder { color: color; font-family: famyli; } /* WebKit */
-	:-moz-placeholder { color: color; font-family: famyli; } /* Firefox 18- */
-	::-moz-placeholder { color: color; font-family: famyli; } /* Firefox 19+ */
-	:-ms-input-placeholder { color: color; font-family: famyli; } /* IE 10+ */
+    ::-webkit-input-placeholder { color: color; font-family: famyli; } /* WebKit */
+    :-moz-placeholder { color: color; font-family: famyli; } /* Firefox 18- */
+    ::-moz-placeholder { color: color; font-family: famyli; } /* Firefox 19+ */
+    :-ms-input-placeholder { color: color; font-family: famyli; } /* IE 10+ */
 @media screen and (max-width 960px)
-	.title_block
-		h2
-			font-size 32px
+    .title_block
+        h2
+            font-size 32px
+.formErrorContent
+    background c_white !important
+    color c_main !important
+.formError .formErrorArrow div
+    background c_main !important
+
+@media screen and (max-width 480px)
+    .container--text
+        width 90% !important

@@ -485,6 +485,12 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .home_productos_destacados:before {
+    display: none;
+  }
+  .home_productos_destacados:after {
+    display: none;
+  }
   .home_productos_destacados__banner {
     box-sizing: border-box;
   }

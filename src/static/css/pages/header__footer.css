@@ -324,4 +324,7 @@
   .footer__datos__list_redes {
     justify-content: center;
   }
+  .footer__links {
+    display: none;
+  }
 }

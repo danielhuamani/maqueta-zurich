@@ -275,6 +275,9 @@
     width: 40%;
     margin-bottom: 25px;
   }
+  .home_nuestras_noticias__list__item a {
+    margin-top: 20px;
+  }
   .servicios__cnt_title_tabs {
     flex-direction: column;
   }
@@ -318,6 +321,9 @@
   }
   .home_nuestras_noticias__list__item--blog h3 {
     text-align: center;
+  }
+  .home_nuestras_noticias__list__item h3:after {
+    display: none;
   }
   .home_nuestras_noticias__list__item {
     width: 80%;

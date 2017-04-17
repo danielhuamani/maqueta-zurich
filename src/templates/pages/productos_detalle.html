@@ -45,7 +45,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container container--text">
+        <div class="producto_detalle__cotizar producto_detalle__cotizar--movil">
+            <a href="" class="btn btn--main cotizar_btn" >COTIZAR PRODUCTO </a>
+        </div>
         <div class="slider">
             <div id="bx-pager">
                 {% for x  in "4"|range %}
@@ -65,6 +68,7 @@
                 {% endfor %}
             </div>
         </div>
+
         <div class="producto_detalle__description">
 
             <h3 class="title">P200 Series Positioners</h3>
@@ -129,7 +133,7 @@
         </div>
         <div class="container_products">
                 {% for x in "6"|range %}
-                <div class="product">
+                <a href="productos_detalle.html" class="product">
                     <div class="product__title">
                         <h3>
                             P200 Series Positioners
@@ -138,12 +142,11 @@
                     </div>
                     <figure class="product__img">
                         <img src="{{STATIC_URL}}img/producto.png" alt="">
-
                     </figure>
                     <div class="product__enlace">
-                        <a href="productos_detalle.html">VER PRODUCTO <i class="icon-angle-double-right"></i></a>
+                        <div class="ver_mas">VER PRODUCTO <i class="icon-angle-double-right"></i></div>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
 
             </div>
@@ -199,7 +202,7 @@
                 moveSlides: 1,
                 minSlides: 1,
                 maxSlides: 4,
-                slideMargin: 10,
+                slideMargin: 18,
 
             });
         $(".cotizar_btn").click(function(event) {

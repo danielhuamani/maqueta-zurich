@@ -20,6 +20,7 @@
   font-size: 16px;
   font-family: f_lato_r;
   text-align: justify;
+  line-height: 24px;
 }
 .nosotros_nuestra_historia .container .nuestra_historia_image figure {
   background-repeat: no-repeat;
@@ -105,8 +106,8 @@
   width: 20%;
 }
 .nosotros_nuestros_valores__list__item figure {
-  width: 118px;
-  height: 78px;
+  width: 100px;
+  height: 72px;
 }
 .nosotros_nuestros_valores__list__item h3 {
   font-size: 16px;
@@ -153,6 +154,7 @@
   .nosotros_mision_vision .cnt_mision_vision .mision_vision {
     margin: 0px 20px;
     width: auto;
+    margin: auto;
     max-width: 350px;
   }
 }
