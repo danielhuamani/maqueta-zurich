@@ -47,9 +47,7 @@
 					</li>
 				</ul>
 			</div>
-			<figure>
-				<img class="img_res" src="{{STATIC_URL}}img/contacto.png" alt="">
-			</figure>
+
 		</div>
 		<div class="contacto__cnt_formulario">
 			<h3>
@@ -58,15 +56,7 @@
 			<form action="" id="formuarlio_contacto">
 				<div class="cnt-input">
 					<div class="input">
-						<input type="text" class="validate[required]" placeholder="Nombres:" name="nombres">
-					</div>
-					<div class="input">
-						<input type="text" class="validate[required]" placeholder="Apellidos:" name="apellidos">
-					</div>
-				</div>
-				<div class="cnt-input">
-					<div class="input">
-						<input type="text" class="validate[required,custom[email]]" placeholder="Email:" name="email">
+						<input type="text" class="validate[required]" placeholder="Nombres y Apellidos:" name="nombres">
 					</div>
 					<div class="input">
 						<input type="text" class="validate[required]" placeholder="Empresa:" name="empresa">
@@ -74,15 +64,13 @@
 				</div>
 				<div class="cnt-input">
 					<div class="input">
-						<select id="" class="validate[required]" name="cargo">
-							<option value="">Cargp</option>
-							<option value="">test</option>
-						</select>
+						<input type="text" class="validate[required,custom[email]]" placeholder="Email:" name="email">
 					</div>
 					<div class="input">
 						<input type="text"  class="validate[required]" placeholder="Telefono:" name="telefono">
 					</div>
 				</div>
+
 				<div class="cnt-input">
 					<div class="input  input--area">
 						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios"></textarea>

@@ -1669,6 +1669,7 @@
 .contacto__datos {
   background: #2f57c9;
   padding: 60px;
+  padding-bottom: 120px;
 }
 .contacto__datos h3 {
   color: #fff;

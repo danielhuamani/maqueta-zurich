@@ -647,7 +647,7 @@ a {
 .container_products .product__enlace a {
   display: inline-block;
   width: 100%;
-  padding: 22px 0px;
+  padding: 25px 0px;
   color: #2f57c9;
   font-size: 16px;
   font-family: 'latobold';
@@ -3130,6 +3130,7 @@ a {
 .contacto__datos {
   background: #2f57c9;
   padding: 60px;
+  padding-bottom: 120px;
 }
 .contacto__datos h3 {
   color: #fff;

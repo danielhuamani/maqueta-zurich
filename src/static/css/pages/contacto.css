@@ -11,6 +11,7 @@
 .contacto__datos {
   background: c_main;
   padding: 60px;
+  padding-bottom: 120px;
 }
 .contacto__datos h3 {
   color: c_white;
