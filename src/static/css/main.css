@@ -2430,6 +2430,7 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  min-height: 76px;
 }
 .productos__categorias ul li a {
   padding: 20px 15px;

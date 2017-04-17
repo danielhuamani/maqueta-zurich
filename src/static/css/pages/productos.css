@@ -53,6 +53,7 @@
   margin-bottom: 10px;
   background: c_plomo_c;
   box-sizing: border-box;
+  min-height: 76px;
 }
 .productos__categorias ul li a {
   padding: 20px 15px;
