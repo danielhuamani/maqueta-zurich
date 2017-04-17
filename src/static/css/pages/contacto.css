@@ -118,12 +118,14 @@
     margin-top: 0px;
     margin-right: 0;
     width: 100%;
+    display: none;
   }
   .contacto__datos_img figure {
     display: none;
   }
   .contacto__cnt_formulario {
     width: 100%;
+    margin-top: 20px;
   }
   .contacto__cnt_formulario form {
     max-width: 100%;

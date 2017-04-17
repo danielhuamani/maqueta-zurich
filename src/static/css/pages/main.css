@@ -1114,6 +1114,12 @@
 .productos__categorias ul li.active a {
   color: #fff;
 }
+.productos__categorias ul li:hover {
+  background: #2f57c9;
+}
+.productos__categorias ul li:hover a {
+  color: #fff;
+}
 .productos__categorias ul li {
   width: 23%;
   margin: 0;
@@ -1135,10 +1141,6 @@
   height: 100%;
   text-align: center;
   transition: 0.3s ease all;
-}
-.productos__categorias ul li a:hover {
-  color: #fff;
-  background: #2f57c9;
 }
 .productos__cnt_subcategoria_productos {
   margin-top: 30px;
@@ -1528,6 +1530,7 @@
     right: -120%;
   }
   .producto_detalle__cotizar--movil {
+    margin: auto;
     margin-top: 5px;
     display: block;
   }
@@ -1664,6 +1667,9 @@
   }
   .producto_detalle .container .slider .bx-wrapper {
     max-width: 250px !important;
+  }
+  .producto_detalle .container .slider #bx-pager {
+    margin-top: 20px;
   }
   .producto_detalle .container .slider #bx-pager a img {
     height: 40px;
@@ -1837,12 +1843,14 @@
     margin-top: 0px;
     margin-right: 0;
     width: 100%;
+    display: none;
   }
   .contacto__datos_img figure {
     display: none;
   }
   .contacto__cnt_formulario {
     width: 100%;
+    margin-top: 20px;
   }
   .contacto__cnt_formulario form {
     max-width: 100%;
@@ -1906,6 +1914,7 @@
 }
 .servicios__cnt_title_tabs .tab:hover {
   background: #2f57c9;
+  border-left: 1px solid #fff;
 }
 .servicios__cnt_title_tabs .tab:hover span {
   color: #fff;
@@ -2144,6 +2153,9 @@
   .servicios__cnt_title_tabs .tab {
     width: 100%;
     box-sizing: border-box;
+  }
+  .servicios__cnt_title_tabs .tab:hover {
+    border-bottom: 1px solid #fff;
   }
   .servicios__cnt_tabs .servicios_tab_content__list__item {
     flex-direction: column;

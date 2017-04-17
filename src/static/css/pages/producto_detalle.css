@@ -342,6 +342,7 @@
     right: -120%;
   }
   .producto_detalle__cotizar--movil {
+    margin: auto;
     margin-top: 5px;
     display: block;
   }
@@ -478,6 +479,9 @@
   }
   .producto_detalle .container .slider .bx-wrapper {
     max-width: 250px !important;
+  }
+  .producto_detalle .container .slider #bx-pager {
+    margin-top: 20px;
   }
   .producto_detalle .container .slider #bx-pager a img {
     height: 40px;

@@ -46,6 +46,7 @@
 }
 .servicios__cnt_title_tabs .tab:hover {
   background: c_main;
+  border-left: 1px solid c_white;
 }
 .servicios__cnt_title_tabs .tab:hover span {
   color: c_white;
@@ -284,6 +285,9 @@
   .servicios__cnt_title_tabs .tab {
     width: 100%;
     box-sizing: border-box;
+  }
+  .servicios__cnt_title_tabs .tab:hover {
+    border-bottom: 1px solid c_white;
   }
   .servicios__cnt_tabs .servicios_tab_content__list__item {
     flex-direction: column;
