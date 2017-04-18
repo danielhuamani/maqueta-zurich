@@ -2436,7 +2436,6 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 76px;
 }
 .productos__categorias ul li a {
   padding: 20px 15px;
@@ -2507,6 +2506,14 @@ a {
 .productos__subcategoria ul li a:hover {
   border-bottom: 1px solid #2f57c9;
   color: #2f57c9;
+}
+@media screen and (max-width: 960px) {
+  .productos__categorias ul li {
+    min-height: 76px;
+  }
+  .productos__categorias ul li a {
+    padding: 15px 10px;
+  }
 }
 .producto_detalle {
   padding-top: 65px;
@@ -3090,7 +3097,7 @@ a {
     flex-wrap: wrap;
   }
   .productos__categorias ul li {
-    width: 40%;
+    width: 48%;
   }
   .productos .container .container_products {
     -webkit-box-pack: center;
