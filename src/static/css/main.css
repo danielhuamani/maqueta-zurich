@@ -990,7 +990,7 @@ a {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
   border-bottom: 2px solid transparent;
-  padding-bottom: 3px;
+  padding-bottom: 9px;
   position: relative;
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
