@@ -268,7 +268,7 @@
   position: relative;
 }
 .producto_detalle_relacionados .bx-wrapper .bx-viewport {
-  height: 370px !important;
+  height: 400px !important;
 }
 .producto_detalle_relacionados .bx-wrapper .bx-controls-direction .bx-prev {
   background-image: url("../img/flecha_left.png");
