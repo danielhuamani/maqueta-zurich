@@ -60,6 +60,7 @@
 }
 .servicios__cnt_title_tabs .tab-active {
   background: c_main;
+  border-left: 1px solid c_white;
 }
 .servicios__cnt_title_tabs .tab-active span {
   color: c_white;

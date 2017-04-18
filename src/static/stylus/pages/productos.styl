@@ -6,15 +6,22 @@
             justify-content flex-start
             flex-wrap wrap
             width calc(100% - 280px)
+            box-sizing border-box
+            padding-right 40px
             position relative
             .flecha_top
                 position absolute
                 right 0
                 bottom 80px
                 cursor pointer
+
                 transition .3s ease all
                 &:hover
                     bottom 90px
+                img
+                    display block
+                    width 100%
+                    height auto
             .product__enlace a
                 font-size 13px
             .product__title
@@ -119,12 +126,27 @@
                     &:hover
                         border-bottom 1px solid c_main
                         color c_main
+@media screen and (max-width 1200px)
+    .productos .container .container_products
+        padding-right 28px
+    .productos .container .container_products .flecha_top
+        width 40px
 @media screen and (max-width 960px)
+    .productos .container .container_products
+        padding-right 0
+        padding-bottom 40px
+        margin-bottom 20px
+        .flecha_top
+            bottom 0
+            left 0
+            right 0
+            margin auto
+            &:hover
+                bottom 10px
     .productos__categorias
         &__list
             a
                 min-height 76px
-
 @media screen and (max-width 768px)
     .productos__categorias
         &__list
