@@ -606,6 +606,7 @@ a {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
   border: 1px solid transparent;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   margin-left: 0;
 }
@@ -947,6 +948,7 @@ a {
   -ms-transform: scale(0);
   transform: scale(0);
   background: #fff;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   position: fixed;
   -webkit-transition: 0.4s ease all;
@@ -969,6 +971,7 @@ a {
   background: #232868;
   padding: 5px;
   font-size: 26px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: 0.4s ease all;
   -moz-transition: 0.4s ease all;
@@ -1136,6 +1139,7 @@ a {
   color: #232868;
   background: #fff;
   padding: 6px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
@@ -1512,6 +1516,7 @@ a {
   width: 12px;
   height: 12px;
   border: 1px solid transparent;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 2px 0px;
   background: #fff;
@@ -2754,6 +2759,7 @@ a {
 }
 .producto_detalle .cnt_cotizar form .cnt-input .input input {
   color: #fff;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 40px;
   padding-left: 10px;
@@ -3448,6 +3454,7 @@ a {
   padding: 5px 10px;
   border: 1px solid #d5d5d5;
   color: #8e9093;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   font-family: 'latoregular';
   font-size: 14px;
