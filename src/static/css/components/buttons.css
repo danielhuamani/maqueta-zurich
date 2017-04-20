@@ -1,17 +1,1 @@
-.btn {
-  padding: 15px 50px;
-  font-family: f_lato_b;
-  font-size: 15px;
-}
-.btn--main {
-  color: c_white;
-  background-color: c_main;
-  transition: 0.3s ease all;
-  border: transparent;
-  border-radius: 4px;
-  margin-left: 0;
-}
-.btn--main:hover {
-  margin-left: 10px;
-  background-color: c_main_o;
-}
+.btn{padding:15px 50px;font-family:f_lato_b;font-size:15px}.btn--main{color:c_white;background-color:c_main;transition:.3s ease all;border:transparent;border-radius:4px;margin-left:0;}.btn--main:hover{margin-left:10px;background-color:c_main_o}

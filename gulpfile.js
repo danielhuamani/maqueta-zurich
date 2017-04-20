@@ -34,7 +34,8 @@ gulp.task('stylus_blocks', () => {
   return gulp.src(directorio.stylus_blocks)
     .pipe(plumber())
     .pipe(stylus({
-      use: nib()
+      use: nib(),
+      compress: true
     }))
     .pipe(gulp.dest('src/static/css/'))
     .pipe(connect.reload())
