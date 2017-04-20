@@ -1,0 +1,80 @@
+body {
+  background-color: #fff;
+}
+#container_banner {
+  width: 100%;
+  height: 290px;
+  position: relative;
+}
+#container_banner .capa {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/capa_banner.png");
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+#container_banner .container {
+  position: relative;
+  z-index: 30;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#container_banner .container h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'latoblack';
+  max-width: 450px;
+}
+#container_banner .container .description {
+  max-width: 700px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'latoregular';
+  font-size: 16px;
+  color: #fff;
+  line-height: 22px;
+}
+.container_banner--large {
+  height: 450px !important;
+}
+@media screen and (max-width: 768px) {
+  #container_banner .container h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container_banner .container h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 48px) {
+  #container_banner .container h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,22 @@
+.btn {
+  padding: 15px 50px;
+  font-family: 'latobold';
+  font-size: 15px;
+}
+.btn--main {
+  color: #fff;
+  background-color: #2f57c9;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-left: 0;
+}
+.btn--main:hover {
+  margin-left: 10px;
+  background-color: #3a75d6;
+}
