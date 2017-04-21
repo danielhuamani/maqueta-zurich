@@ -16,7 +16,7 @@ var directorio = {
   stylus_blocks: ['src/static/stylus/**/*.styl', '!src/static/stylus/base/variables.styl'],
 };
 
-/*gulp.task('stylus', function () {
+gulp.task('stylus', function () {
   gulp.src(directorio.stylus)
     .pipe(plumber())
     .pipe(stylus({
@@ -26,7 +26,7 @@ var directorio = {
     .pipe(gulp.dest('src/static/css/'))
     .pipe(connect.reload());
 
-});*/
+});
 var glob_time_offset = 5128;
 
 function makeid(){
