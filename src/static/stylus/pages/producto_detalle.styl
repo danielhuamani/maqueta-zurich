@@ -64,8 +64,20 @@
                 background-position: center right 15px;
             .cnt-input
                 margin-bottom 20px
-                placeholder(c_white, f_lato_r)
                 .input
+                    ::-webkit-input-placeholder
+                        color c_white
+                        font-family f_lato_r
+                    :-moz-placeholder
+                         color c_white
+                         font-family f_lato_r
+                    ::-moz-placeholder
+                        colorr c_white
+                        font-family f_lato_r
+                    :-ms-input-placeholder
+                        color c_white
+                        font-family f_lato_r
+
                     input
                         color c_white
                         border-radius 5px

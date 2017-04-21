@@ -265,6 +265,9 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .home_servicios__content {
+    max-width: 100%;
+  }
   .home_servicios__list_img {
     display: none;
   }

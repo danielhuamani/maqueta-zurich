@@ -311,8 +311,13 @@
   display: box;
   display: flex;
   margin-top: 80px;
-  max-width: 2600px;
   position: relative;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .home_productos_destacados:before {
   content: "";
@@ -606,6 +611,14 @@
   .home_producto_industria .producto_industria_slider__img img {
     width: 100%;
   }
+  .home_productos_destacados {
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
   .home_productos_destacados__banner {
     padding: 50px 30px 50px 30px;
     margin-right: 10px;
@@ -619,7 +632,8 @@
     font-size: 34px;
   }
   .home_productos_destacados__banner .btn--banner {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 15px 26px;
   }
   .home_producto_industria .bx-wrapper {
     max-width: 790px !important;

@@ -1,0 +1,206 @@
+.contacto .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.contacto__datos_img {
+  width: 40%;
+  position: relative;
+  margin-right: 70px;
+  margin-top: -50px;
+  z-index: 140;
+}
+.contacto__datos {
+  background: #2f57c9;
+  padding: 60px;
+  padding-bottom: 120px;
+}
+.contacto__datos h3 {
+  color: #fff;
+  font-family: 'latoblack';
+  font-size: 24px;
+  margin: 0px;
+  text-align: left;
+}
+.contacto__datos ul {
+  margin-top: 30px;
+}
+.contacto__datos ul li,
+.contacto__datos ul a {
+  font-size: 16px;
+  font-family: 'robotoregular';
+  color: #fff;
+}
+.contacto__cnt_formulario {
+  margin-top: 50px;
+  width: 60%;
+}
+.contacto__cnt_formulario h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'latoblack';
+  color: #2f57c9;
+  text-align: left;
+}
+.contacto__cnt_formulario form {
+  overflow: hidden;
+  margin-top: 30px;
+  max-width: 520px;
+  margin-left: 0;
+}
+.contacto__cnt_formulario form .btn--contacto {
+  padding: 10px 35px;
+  text-align: right;
+  float: right;
+}
+.contacto__cnt_formulario form .cnt-input {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.contacto__cnt_formulario form .cnt-input .input:first-child {
+  margin-left: 0;
+}
+.contacto__cnt_formulario form .cnt-input .input {
+  width: 50%;
+  margin: 7px 5px;
+}
+.contacto__cnt_formulario form .cnt-input .input::-webkit-input-placeholder {
+  (((#8e9093))): ;
+  latoregular: ;
+}
+.contacto__cnt_formulario form .cnt-input .input:-moz-placeholder {
+  (((#8e9093))): ;
+  latoregular: ;
+}
+.contacto__cnt_formulario form .cnt-input .input::-moz-placeholder {
+  (((#8e9093))): ;
+  latoregular: ;
+}
+.contacto__cnt_formulario form .cnt-input .input:-ms-input-placeholder {
+  (((#8e9093))): ;
+  latoregular: ;
+}
+.contacto__cnt_formulario form .cnt-input .input input,
+.contacto__cnt_formulario form .cnt-input .input select,
+.contacto__cnt_formulario form .cnt-input .input textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid #d5d5d5;
+  color: #8e9093;
+  border-radius: 8px;
+  font-family: 'latoregular';
+  font-size: 14px;
+}
+.contacto__cnt_formulario form .cnt-input .input textarea {
+  width: 100%;
+  height: 100px;
+}
+.contacto__cnt_formulario form .cnt-input .input--area {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container--small {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contacto__datos {
+    background: transparent;
+    color: #2f57c9;
+    padding: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .contacto__datos h3 {
+    width: 100%;
+    color: #2f57c9;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contacto__datos ul {
+    margin: 0;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+  .contacto__datos ul li {
+    color: #2f57c9;
+  }
+  .contacto__datos ul li a {
+    color: #2f57c9;
+  }
+  .contacto__datos_img {
+    margin-top: 0px;
+    margin-right: 0;
+    width: 100%;
+    display: none;
+  }
+  .contacto__datos_img figure {
+    display: none;
+  }
+  .contacto__cnt_formulario {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contacto__cnt_formulario form {
+    max-width: 100%;
+  }
+  .contacto__cnt_formulario form .cnt-input {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .contacto__cnt_formulario form .cnt-input .input {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .contacto__cnt_formulario h3 {
+    text-align: center;
+  }
+}
