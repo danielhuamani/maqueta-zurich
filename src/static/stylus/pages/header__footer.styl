@@ -59,6 +59,19 @@
             height auto
             display block
     &__menu
+        display flex
+        .idioma
+            display flex
+            a.active
+                color c_white
+                background #232868
+            a
+
+                padding 5px 5px
+                border 1px solid c_plomo
+                color c_plomo
+                font-size 14px
+                font-family f_lato_b
         ul
             display flex
             li
@@ -97,7 +110,6 @@
 
 .footer
     padding-top 80px
-
     background c_footer
     &__top
         padding-bottom 60px
@@ -223,6 +235,7 @@
         &__menu--responsive-active
             right 0px !important
         &__menu--responsive
+            flex-direction column
             position fixed
             z-index 200
             width 200px
@@ -233,7 +246,11 @@
             right -250px
             background c_footer
             transition .4s ease all
+            .idioma
+                margin-top 20px
+                margin-left 20px
             ul
+                margin 0
                 flex-direction column
                 li
                     margin 0px 0px

@@ -1,0 +1,51 @@
+.pag-error
+	margin 100px 0px
+	.img
+		margin-bottom 20px
+		figure
+			width 326px
+			img
+				width 100%
+				display block
+	.text-gracias
+		position relative
+		z-index 3
+		text-align center
+		&:after
+			content ""
+			display blok
+			width 407px
+			height 133px
+			position absolute
+			left 0
+			right 0
+			top -40px
+			margin auto
+			z-index 2
+			background-image url("../img/ups.png")
+		h3
+			color c_main
+			font-size 40px
+			font-family f_lato_b
+			position relative
+			z-index 3
+		.regresar
+			position relative
+			z-index 3
+			font-size 20px
+			font-family f_lato_r
+			color c_plomo
+			a
+				font-family f_lato_r
+				color c_main
+@media screen and (max-width 768px)
+	.pag-error .img
+		display none
+	.pag-error .text-gracias h3
+		font-size 28px
+	.pag-error .text-gracias .regresar
+		font-size 18px
+	.pag-error .text-gracias:after
+		width 250px
+		background-repeat no-repeat
+		background-size contain

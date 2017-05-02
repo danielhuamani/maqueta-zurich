@@ -4,7 +4,7 @@
 	<title></title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="/static/css/main.css?dev=pQUrbc3D">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css?dev=4dAxUNDv">
 
 
 
@@ -49,6 +49,10 @@
 					</a>
 				</li>
 			</ul>
+			<div class="idioma">
+				<a href="" class="active">ESP</a>
+				<a href="">ENG</a>
+			</div>
 		</nav>
 	</div>
 </header>
@@ -327,34 +331,6 @@
 			</div>
 			
 
-			<div class="home_nuestras_marcas__list__item">
-				<figure>
-					<img  width="135" height="70" src="/static/img/marca_1.png" alt="">
-				</figure>
-			</div>
-			
-
-			<div class="home_nuestras_marcas__list__item">
-				<figure>
-					<img  width="135" height="70" src="/static/img/marca_1.png" alt="">
-				</figure>
-			</div>
-			
-
-			<div class="home_nuestras_marcas__list__item">
-				<figure>
-					<img  width="135" height="70" src="/static/img/marca_1.png" alt="">
-				</figure>
-			</div>
-			
-
-			<div class="home_nuestras_marcas__list__item">
-				<figure>
-					<img  width="135" height="70" src="/static/img/marca_1.png" alt="">
-				</figure>
-			</div>
-			
-
 		</div>
 	</div>
 </section>
@@ -569,19 +545,22 @@
 
 					}
 			});
-			$('.home_nuestras_marcas__list').bxSlider({
-				adaptiveHeight: true,
-				pager: false,
-				controls: true,
-				slideWidth: 135,
-				moveSlides: 1,
-				nextText: '',
-				prevText: '',
-			    minSlides: 1,
-			    maxSlides: 4,
-			    slideMargin: 60,
 
-			});
+			if ($('.home_nuestras_marcas__list__item').length > 0) {
+				$('.home_nuestras_marcas__list').bxSlider({
+					adaptiveHeight: true,
+					pager: false,
+					controls: true,
+					slideWidth: 135,
+					moveSlides: 1,
+					nextText: '',
+					prevText: '',
+				    minSlides: 1,
+				    maxSlides: 4,
+				    slideMargin: 60,
+
+				});
+			};
 		});
 
 	</script>

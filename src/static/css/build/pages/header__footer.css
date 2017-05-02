@@ -95,6 +95,9 @@
   -webkit-align-items: center;
   align-items: center;
 }
+.header__logo {
+  margin: 0;
+}
 .header__logo img {
   width: 100%;
   height: auto;

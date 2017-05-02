@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/static/css/main.css?dev=4dAxUNDv">
 
-<link rel="stylesheet" href="/static/js/validationform/validationEngine.jquery.css">
+
 
 </head>
 <body class="">
@@ -59,82 +59,20 @@
 
 		<div class="page">
 			
-
-<section class="" id="container_banner" style="background-image:url('/static/img/FOTO_PRINCIPAL.png')">
-	<div class="capa"></div>
+<section class="pag-404">
 	<div class="container">
-		<h2>
-			Estamos aquí para ayudarte en todo momento
-		</h2>
-	</div>
-</section>
-<section class="contacto">
-	<div class="container container--small">
-		<div class="contacto__datos_img">
-			<div class="contacto__datos">
-				<h3>
-					CONÉCTATE CON NOSOTROS
-				</h3>
-				<ul>
-					<li>
-						<a href="tel:(01)334 6747">(01)334 6747</a>
-					</li>
-					<li>
-						<a href="tel:(01)456 8902">(01)456 8902</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						Ma-Do: 09:00–17:00
-					</li>
-					<li>
-						Vr: 09:00–15:00
-					</li>
-				</ul>
-				<ul>
-					<li>
-						Jr. Sinchi Roca 2728 #501
-					</li>
-					<li>
-						Lince, Lima - Perú
-					</li>
-					<li>
-						<a href="mailto:info@zurich-valves.pe">info@zurich-valves.pe</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-		<div class="contacto__cnt_formulario">
+		<div class="text-gracias">
 			<h3>
-				Escríbenos y te contactaremos
+				Gracias, nos comunicaremos
+				contigo a la brevedad.
 			</h3>
-			<form action="" id="formuarlio_contacto">
-				<div class="cnt-input">
-					<div class="input">
-						<input type="text" class="validate[required]" placeholder="Nombres y Apellidos:" name="nombres">
-					</div>
-					<div class="input">
-						<input type="text" class="validate[required]" placeholder="Empresa:" name="empresa">
-					</div>
-				</div>
-				<div class="cnt-input">
-					<div class="input">
-						<input type="text" class="validate[required,custom[email]]" placeholder="Email:" name="email">
-					</div>
-					<div class="input">
-						<input type="text"  class="validate[required]" placeholder="Telefono:" name="telefono">
-					</div>
-				</div>
-
-				<div class="cnt-input">
-					<div class="input  input--area">
-						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios"></textarea>
-					</div>
-				</div>
-				<button id="enviar_contacto" class="btn btn--contacto btn--main">ENVIAR</button>
-
-			</form>
+			<p>Continúa navegando o conoce nuestros productos</p>
+			<a href="" class="btn btn--main">VER PRODUCTOS</a>
+		</div>
+		<div class="image">
+			<figure>
+				<img src="/static/img/persona.png" alt="">
+			</figure>
 		</div>
 	</div>
 </section>
@@ -256,31 +194,6 @@
 	});
 	</script>
 	
-<script src="/static/js/validationform/jquery.validationEngine-es.js"></script>
-<script src="/static/js/validationform/jquery.validationEngine.js"></script>
-<script>
-	jQuery(document).ready(function($) {
-		$("form").validationEngine('attach', {
-			promptPosition: "topLeft",
-			autoHidePrompt: true,
-			autoHideDelay: 400000,
-			binded: false,
-			scroll: false
-		});
-		$("#enviar_contacto").click(function(e) {
-			e.preventDefault();
-			var valid = $('#formuarlio_contacto').validationEngine('validate');
-			console.log(valid)
-			if (!valid) {
-
-			}else{
-				$('#enviar_contacto').fadeOut('slow');
-
-			}
-
-		});
-	});
-</script>
 
 </body>
 </html>

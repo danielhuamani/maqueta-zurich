@@ -233,6 +233,8 @@
         .product
             background c_white
             margin 0px
+            margin-right 18px
+            margin-bottom 10px
             width 270px !important
         .product__title
             margin-top 10px
@@ -258,7 +260,7 @@
                 display block
                 height 40px
                 position absolute
-                left -50px
+                left -60px
                 top 50%
                 transform rotate(180deg)
                 transition 0.3s ease all
@@ -270,7 +272,7 @@
                 display block
                 height 40px
                 position absolute
-                right -50px
+                right -60px
                 top 50%
                 transition 0.3s ease all
                 background-size cover
@@ -281,6 +283,11 @@
     to {opacity: 1;}
 }
 @media screen and (max-width 1300px)
+    .producto_detalle_relacionados .bx-wrapper .bx-controls-direction
+        .bx-prev
+            left -45px
+        .bx-next
+            right -38px
     .producto_detalle_relacionados .container_products .product
         width 260px !important
 
@@ -355,7 +362,7 @@
     .producto_detalle .container .slider .bx-wrapper
         max-width 400px !important
     .producto_detalle_relacionados .bx-wrapper
-        max-width 425px !important
+        max-width 430px !important
     .productos .container
         flex-direction column
     .productos__cnt_subcategoria
@@ -386,8 +393,11 @@
     .producto_detalle_relacionados .container_products .product
         width 250px !important
     .producto_detalle_relacionados .bx-wrapper
-        max-width 260px !important
+        max-width 264px !important
+    .producto_detalle_relacionados .bx-wrapper .bx-viewport
+        height 345px !important
 @media screen and (max-width 480px)
+
     .producto_detalle__descarga a
         font-size 16px
     .producto_detalle__tabs__title h3
@@ -402,7 +412,7 @@
     .producto_detalle_relacionados .container_products .product
         width 200px !important
     .producto_detalle_relacionados .bx-wrapper
-        max-width 205px !important
+        max-width 208px !important
     .producto_detalle__item
         width 250px !important
     .producto_detalle .container .slider .bx-wrapper

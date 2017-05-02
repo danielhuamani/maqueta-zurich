@@ -1,0 +1,88 @@
+.pag-404 {
+  margin-top: 20px;
+}
+.pag-404 .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.pag-404 .container .image {
+  margin-left: 20px;
+}
+.pag-404 .container .image figure {
+  margin-bottom: -1px;
+}
+.pag-404 .container .image figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.pag-404 .container .text-gracias {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  max-width: 540px;
+}
+.pag-404 .container .text-gracias h3 {
+  font-size: 40px;
+  color: #2f57c9;
+  font-family: 'latobold';
+}
+.pag-404 .container .text-gracias p {
+  color: #989a9d;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-family: 'latobold';
+}
+.pag-404 .container .text-gracias a {
+  max-width: 124px;
+}
+@media screen and (max-width: 768px) {
+  .pag-404 {
+    margin-bottom: 20px;
+  }
+  .pag-404 .container .text-gracias h3 {
+    font-size: 32px;
+  }
+  .pag-404 .container .text-gracias p {
+    font-size: 18px;
+  }
+  .pag-404 .container .text-gracias a {
+    margin: auto;
+  }
+  .pag-404 .container .image {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pag-404 .container .text-gracias h3 {
+    font-size: 26px;
+  }
+  .pag-404 .container .text-gracias p {
+    font-size: 16px;
+  }
+}

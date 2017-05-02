@@ -256,7 +256,7 @@
 			<p>En Zurich asumimos el compromiso de brindar soluciones de forma eficiente.</p>
 		</div>
 		<div class="home_nuestras_marcas__list">
-			{% for serv in "6"|range %}
+			{% for serv in "2"|range %}
 
 			<div class="home_nuestras_marcas__list__item">
 				<figure>
@@ -363,19 +363,22 @@
 
 					}
 			});
-			$('.home_nuestras_marcas__list').bxSlider({
-				adaptiveHeight: true,
-				pager: false,
-				controls: true,
-				slideWidth: 135,
-				moveSlides: 1,
-				nextText: '',
-				prevText: '',
-			    minSlides: 1,
-			    maxSlides: 4,
-			    slideMargin: 60,
 
-			});
+			if ($('.home_nuestras_marcas__list__item').length > 0) {
+				$('.home_nuestras_marcas__list').bxSlider({
+					adaptiveHeight: true,
+					pager: false,
+					controls: true,
+					slideWidth: 135,
+					moveSlides: 1,
+					nextText: '',
+					prevText: '',
+				    minSlides: 1,
+				    maxSlides: 4,
+				    slideMargin: 60,
+
+				});
+			};
 		});
 
 	</script>

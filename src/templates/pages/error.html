@@ -1,0 +1,22 @@
+{% extends "../common/base.html" %}
+{% block content %}
+<section class="pag-error">
+	<div class="container">
+		<div class="img">
+			<figure>
+				<img src="{{STATIC_URL}}img/error.png" alt="">
+			</figure>
+		</div>
+		<div class="text-gracias">
+			<h3>Lo sentimos, esta página no existe.</h3>
+			<div class="regresar">
+				Regresa a nuestra <a href="productos.html">página de productos</a> o al <a href="home.html">inicio</a> de la web
+			</div>
+
+		</div>
+
+	</div>
+</section>
+{% endblock content %}
+{% block js %}
+{% endblock js %}

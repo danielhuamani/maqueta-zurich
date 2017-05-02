@@ -1,0 +1,67 @@
+.pag-error {
+  margin: 100px 0px;
+}
+.pag-error .img {
+  margin-bottom: 20px;
+}
+.pag-error .img figure {
+  width: 326px;
+}
+.pag-error .img figure img {
+  width: 100%;
+  display: block;
+}
+.pag-error .text-gracias {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+.pag-error .text-gracias:after {
+  content: "";
+  display: blok;
+  width: 407px;
+  height: 133px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -40px;
+  margin: auto;
+  z-index: 2;
+  background-image: url("../img/ups.png");
+}
+.pag-error .text-gracias h3 {
+  color: #2f57c9;
+  font-size: 40px;
+  font-family: 'latobold';
+  position: relative;
+  z-index: 3;
+}
+.pag-error .text-gracias .regresar {
+  position: relative;
+  z-index: 3;
+  font-size: 20px;
+  font-family: 'latoregular';
+  color: #8e9093;
+}
+.pag-error .text-gracias .regresar a {
+  font-family: 'latoregular';
+  color: #2f57c9;
+}
+@media screen and (max-width: 768px) {
+  .pag-error .img {
+    display: none;
+  }
+  .pag-error .text-gracias h3 {
+    font-size: 28px;
+  }
+  .pag-error .text-gracias .regresar {
+    font-size: 18px;
+  }
+  .pag-error .text-gracias:after {
+    width: 250px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}

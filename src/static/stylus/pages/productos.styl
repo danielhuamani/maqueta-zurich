@@ -2,12 +2,14 @@
     margin-top 10px
     .container
         display flex
+
         .container_products
-            justify-content flex-start
+            justify-content flex-end
             flex-wrap wrap
             width calc(100% - 280px)
             box-sizing border-box
-            padding-right 40px
+            align-items flex-start
+            padding-right 0
             position relative
             .flecha_top
                 position absolute
@@ -34,12 +36,14 @@
                 margin 0px 10px 20px 10px
     &__categorias
         &__list
+            justify-content flex-start
             display flex
-            justify-content space-between
+            width 100%
+
             flex-wrap wrap
             a
-                width 24%
-                margin-bottom 10px
+                width 275px
+                margin 0px 8px 10px 8px
                 background c_plomo_c
                 color c_plomo
                 padding 20px 12px

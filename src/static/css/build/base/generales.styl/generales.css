@@ -322,8 +322,16 @@ td {
 br {
   line-height: 1;
 }
-a {
+a,
+a:hover,
+a:active,
+a:focus {
   margin: 0;
+  outline: 0;
+}
+.container-product {
+  max-width: 1200px;
+  margin: auto;
 }
 .container {
   width: 96%;
@@ -385,5 +393,10 @@ a {
 @media screen and (max-width: 480px) {
   .container--text {
     width: 90% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-product {
+    width: 96%;
   }
 }
