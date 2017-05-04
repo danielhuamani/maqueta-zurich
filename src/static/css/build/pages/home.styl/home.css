@@ -398,7 +398,7 @@
 .home_servicios__list__item h4 {
   font-size: 21px;
   font-family: 'latoblack';
-  color: #8e9093;
+  color: #6d6e70;
   position: relative;
   padding-bottom: 15px;
 }
@@ -416,6 +416,7 @@
   font-size: 16px;
   color: #8e9093;
   margin: 35px 0px;
+  line-height: 26px;
 }
 .home_servicios .btn--servicios {
   display: inline-block;

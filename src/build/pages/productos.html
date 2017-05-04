@@ -4,7 +4,7 @@
 	<title></title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="/static/css/main.css?dev=4dAxUNDv">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css?dev=UmxWSxgK">
 
 
 
@@ -72,16 +72,16 @@
 <section class="productos">
 	<div class="productos__categorias">
 		<div class="container">
-                                    <div class="productos__categorias__list">
-                                        <a href="" class="active"><span>Minería</span></a>
-                                        <a href=""><span>Agua potable y residual</span></a>
-                                        <a href=""><span>Alimentos y bebidas</span></a>
-                                        <a href=""><span>Agua potable y residual</span></a>
-                                        <a href=""><span>Petróleo y gas</span></a>
-                                        <a href=""><span>Minería</span></a>
-                                        <a href=""><span>Petróleo y gas</span></a>
-                                        <a href=""><span>Otras industrias</span></a>
-                                    </div>
+			<div class="productos__categorias__list">
+				<a href="" class="active"><span>Minería</span></a>
+				<a href=""><span>Agua potable y residual</span></a>
+				<a href=""><span>Alimentos y bebidas</span></a>
+				<a href=""><span>Agua potable y residual</span></a>
+				<a href=""><span>Petróleo y gas</span></a>
+				<a href=""><span>Minería</span></a>
+				<a href=""><span>Petróleo y gas</span></a>
+				<a href=""><span>Otras industrias</span></a>
+			</div>
 
 		</div>
 	</div>
@@ -119,6 +119,20 @@
 			<div class="container_products">
 					<a href="#cnt_products" class="flecha_top">
 						<img src="/static/img/flecha_top.png" alt="">
+					</a>
+					<a href="productos_detalle.html" class="product">
+						<div class="product__title">
+							<h3>
+								P200 Series Positioners
+
+							</h3>
+						</div>
+						<figure class="product__img">
+							<img src="/static/img/producto.png" alt="">
+						</figure>
+						<div class="product__enlace">
+							<div class="ver_mas">VER PRODUCTO <i class="icon-angle-double-right"></i></div>
+						</div>
 					</a>
 					
 
@@ -349,75 +363,75 @@
 	</script>
 	
 <script>
-        $(document).ready(function(){
+		$(document).ready(function(){
 
-            /**
-             * This part does the "fixed navigation after scroll" functionality
-             * We use the jQuery function scroll() to recalculate our variables as the
-             * page is scrolled/
-             */
-            $(window).scroll(function(){
-                var window_top = $(window).scrollTop() - 32; // the "12" should equal the margin-top value for nav.stick
-                // var div_top = $('#nav-anchor').offset().top;
-                //     if (window_top > div_top) {
-                //         $('nav').addClass('stick');
-                //     } else {
-                //         $('nav').removeClass('stick');
-                //     }
-            });
+			/**
+			 * This part does the "fixed navigation after scroll" functionality
+			 * We use the jQuery function scroll() to recalculate our variables as the
+			 * page is scrolled/
+			 */
+			$(window).scroll(function(){
+				var window_top = $(window).scrollTop() - 32; // the "12" should equal the margin-top value for nav.stick
+				// var div_top = $('#nav-anchor').offset().top;
+				//     if (window_top > div_top) {
+				//         $('nav').addClass('stick');
+				//     } else {
+				//         $('nav').removeClass('stick');
+				//     }
+			});
 
-            /**
-             * This part causes smooth scrolling using scrollto.js
-             * We target all a tags inside the nav, and apply the scrollto.js to it.
-             */
-            $(".flecha_top").click(function(evn){
-                evn.preventDefault();
+			/**
+			 * This part causes smooth scrolling using scrollto.js
+			 * We target all a tags inside the nav, and apply the scrollto.js to it.
+			 */
+			$(".flecha_top").click(function(evn){
+				evn.preventDefault();
 
-                $('html,body').scrollTo(this.hash, this.hash);
-            });
+				$('html,body').scrollTo(this.hash, this.hash);
+			});
 
-            /**
-             * This part handles the highlighting functionality.
-             * We use the scroll functionality again, some array creation and
-             * manipulation, class adding and class removing, and conditional testing
-             */
-
-
-            $(window).scroll(function(){
-                var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-                var windowHeight = $(window).height(); // get the height of the window
-                var docHeight = $(document).height();
+			/**
+			 * This part handles the highlighting functionality.
+			 * We use the scroll functionality again, some array creation and
+			 * manipulation, class adding and class removing, and conditional testing
+			 */
 
 
+			$(window).scroll(function(){
+				var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+				var windowHeight = $(window).height(); // get the height of the window
+				var docHeight = $(document).height();
 
 
-            });
-        });
-        $.scrollTo = $.fn.scrollTo = function(x, y, options){
-            if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
-            console.log(x);
-            console.log(y);
-            options = $.extend({}, {
-                gap: {
-                    x: 0,
-                    y: 0
-                },
-                animation: {
-                    easing: 'swing',
-                    duration: 1000,
-                    complete: $.noop,
-                    step: $.noop
-                }
-            }, options);
 
-            return this.each(function(){
-                var elem = $(this);
-                elem.stop().animate({
-                    scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
-                    scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top  + options.gap.y
-                }, options.animation);
-            });
-        };
+
+			});
+		});
+		$.scrollTo = $.fn.scrollTo = function(x, y, options){
+			if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+			console.log(x);
+			console.log(y);
+			options = $.extend({}, {
+				gap: {
+					x: 0,
+					y: 0
+				},
+				animation: {
+					easing: 'swing',
+					duration: 1000,
+					complete: $.noop,
+					step: $.noop
+				}
+			}, options);
+
+			return this.each(function(){
+				var elem = $(this);
+				elem.stop().animate({
+					scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+					scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top  + options.gap.y
+				}, options.animation);
+			});
+		};
 </script>
 
 </body>
