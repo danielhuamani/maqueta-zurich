@@ -95,6 +95,9 @@
   filter: none;
   bottom: -15px;
 }
+.servicios__cnt_title_tabs .tab-active:first-child {
+  border-left: 1px solid transparent;
+}
 .servicios__cnt_title_tabs .tab-active {
   background: #2f57c9;
   border-left: 1px solid #fff;
@@ -212,7 +215,7 @@
 }
 .servicios__cnt_tabs .servicios_tab_content__list__item h4 {
   margin-bottom: 30px;
-  color: #8e9093;
+  color: #6d6e70;
   font-family: 'latobold';
   font-size: 18px;
   padding-bottom: 15px;
@@ -225,7 +228,7 @@
   position: absolute;
   width: 30px;
   height: 2px;
-  background: #8e9093;
+  background: #6d6e70;
 }
 .servicios__cnt_tabs .servicios_tab_content__description {
   color: #8e9093;

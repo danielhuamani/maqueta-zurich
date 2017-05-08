@@ -344,9 +344,13 @@
   z-index: -1;
 }
 .home_productos_destacados__banner {
-  width: 380px;
   background: #232868;
+  width: 35%;
   padding: 110px 100px 60px 100px;
+}
+.home_productos_destacados__banner .text {
+  width: 380px;
+  float: right;
 }
 .home_productos_destacados__banner h3 {
   font-size: 45px;
@@ -398,7 +402,7 @@
 .home_servicios__list__item h4 {
   font-size: 21px;
   font-family: 'latoblack';
-  color: #8e9093;
+  color: #6d6e70;
   position: relative;
   padding-bottom: 15px;
 }
@@ -416,6 +420,7 @@
   font-size: 16px;
   color: #8e9093;
   margin: 35px 0px;
+  line-height: 26px;
 }
 .home_servicios .btn--servicios {
   display: inline-block;
@@ -621,7 +626,7 @@
   }
   .home_productos_destacados__banner {
     padding: 50px 30px 50px 30px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .container_slider__list__item {
     height: 480px;

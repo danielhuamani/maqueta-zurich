@@ -1,3 +1,6 @@
+.home_productos_destacados .container_products {
+  width: 60%;
+}
 .container_products {
   display: -webkit-box;
   display: -moz-box;
@@ -141,6 +144,9 @@
   width: 100%;
 }
 @media screen and (max-width: 1400px) {
+  .home_productos_destacados .container_products {
+    width: inherit;
+  }
   .container_products {
     display: -webkit-box;
     display: -moz-box;

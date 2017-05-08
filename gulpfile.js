@@ -132,7 +132,7 @@ gulp.task('connect', function() {
     root: 'src/',
     hostname: '0.0.0.0',
     livereload: true,
-    port: '3000',
+    port: '8006',
     open: true
   });
 });
